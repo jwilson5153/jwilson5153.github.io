@@ -4,6 +4,7 @@
  OUTPUT: Display sum on the document
 */ 
 
+
 function addNumbers() {
 	//INPUT
 	 let x = parseFloat(document.getElementById('number1').value);
