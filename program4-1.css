@@ -28,7 +28,7 @@ main {
 	padding: 10px;
 	max-width: 500px;
 	background-color: #abe;
-	box-shadow: 0 0 30px;
+	box-shadow: none;
 }
 
 h3 {
