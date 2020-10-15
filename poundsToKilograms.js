@@ -17,5 +17,5 @@ function poundsToKilograms() {
 	 let multiplier = Math.pow(10, digits);
 	 kiloMass = Math.round(kiloMass * multiplier) / multiplier;
 	 //OUTPUT
-	 document.getElementById('output').innerHTML = "The result of " + x + " pounds divided " + y + " equals " + kiloMass + " kilograms";
+	 document.getElementById('output').innerHTML = " " + kiloMass + " " + " kilograms";
 }
