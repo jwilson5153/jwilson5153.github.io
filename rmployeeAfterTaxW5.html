@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>After Tax Pay</title>
+        
+    </head>
+    <body>
+        <header>
+           
+        </header>
+        <main>
+            <h3>Find After Tax Pay</h3>
+            <label>Enter Regular Hours: <input type="text" id="regularHours"></label>
+          <label>Enter Overtime Hours: <input type="text" id="overtimeHours"></label>
+            <label><button onclick="afterTaxPay()">Find after tax pay</button></label>
+            <hr>
+            <p><span id="output"></span></p>
+        </main>
+        <script>
+            function afterTaxPay() {
+            //Input User inputs regular hours as one variable and overtime hours as second variable
+            //Declare and assign the hourlyRate, overtimeRate, and taxRate variables
+            let x = parseFloat(document.getElementById('regularHours').value);
+            let y = parseFloat(document.getElementById('overtimeHours').value);
+            let hourlyRate = 15;
+            let overtimeRate = 22.5;
+            let taxRate = .15;
+            //Processing Regular hours are multiplied by constant of 15 and overtime hours are multiplied by constant of 22.5
+            //The two results are added to obtain total pay
+            //Total pay is multiplied by a constant of .15 which is the tax rate
+            //The tax rate is subtracted from the total pay to obtain the after tax pay
+            let totalPay = x * hourlyRate + y * overtimeRate;
+            let aftertaxPay = totalPay - totalPay * taxRate;
+            //Round totalPay to two digits
+            let digits = 2;
+	        let multiplier = Math.pow(10, digits);
+	        aftertaxPay = Math.round(aftertaxPay * multiplier) / multiplier;
+            //Output 
+            document.getElementById('output').innerHTML = "After Tax Pay is " + "$" + aftertaxPay;
+            }
+        </script>
+        <footer>
+            &copy;2020 &bull; Jim Wilson &bull; BYU-Idaho &bull; CIT 160-16
+        </footer>
+
+    </body>
+</html>

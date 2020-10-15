@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Round Cylinder Volume</title>
+        
+    </head>
+    <body>
+        <header>
+           
+        </header>
+        <main>
+            <h3>Find Round Cylinder Volume</h3>
+            <label>Enter Cylinder Radius: <input type="text" id="radius"></label>
+          <label>Enter Cylinder Height: <input type="text" id="height"></label>
+            <label><button onclick="cylinderVol()">Find Cylinder Volume</button></label>
+            <hr>
+            <p><span id="output"></span></p>
+        </main>
+        <script>
+            function cylinderVol() {
+            //Input User inputs radius and heigth of cylinder
+            let x = parseFloat(document.getElementById('radius').value);
+            let y = parseFloat(document.getElementById('height').value);
+            //Processing Multiply Pi times the square of the radius times the height
+            let vol = Math.PI * x *  y;
+            //Round vol to no digits
+            let digits = 0;
+	        let multiplier = Math.pow(10, digits);
+            vol = Math.round(vol * multiplier) / multiplier;
+            //Output 
+            document.getElementById('output').innerHTML = "Volume of Cylinder is " +" " + vol;
+            }
+        </script>
+        <footer>
+            &copy;2020 &bull; Jim Wilson &bull; BYU-Idaho &bull; CIT 160-16
+        </footer>
+
+    </body>
+</html>
