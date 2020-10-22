@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Shoe Do I Wear Today?</title>
+    <link rel="stylesheet" href="template.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 6 Weather Shoes</h1>
+        <h1>Jim Wilson</h1>
+    </header>
+    <main>
+        <h2>What is the weather today?</h2>
+        <label>
+            <select name="weather" id="weather">
+                <option value="" disabled selected>--Please choose weather--</option>
+                <option value="hot">hot</option>
+                <option value="rain">rain</option>
+                <option value="snow">snow</option>
+                <option value="unknown">unknown</option>
+            </select>
+        </label>
+        <label>
+            <button type="button" onclick="getShoes()">Get Shoes</button>
+        </label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Jim Wilson &bull; BYU-Idaho &bull; CIT 160-16
+    </footer>
+</body>
+<script src="footware.js">
+
+</script>
+
+</html>
