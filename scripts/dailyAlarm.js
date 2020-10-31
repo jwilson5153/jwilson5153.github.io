@@ -22,7 +22,7 @@ function dailyAlarm() {
         holiday = "Christmas";
     }
     else {
-        holiday = "not a holiday";
+        holiday = "Today is not a holiday";
     }
     //PROCESSING: If today is a weekend day or it is a holiday assign the "message" variable "Sleep in today"
     //PROCESSING: If is not a weekend or a holiday set the "message" to "Get up"
@@ -33,7 +33,7 @@ function dailyAlarm() {
         message = "Sleep in"
     }
     else {
-        message = "Get up";
+        message = "Today is a weekday, Get up";
     }
 
     //OUTPUT 
