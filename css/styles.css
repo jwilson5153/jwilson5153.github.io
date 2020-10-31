@@ -48,3 +48,7 @@ label {
 	background-color: green;
 	color: white;
 }
+
+#output {
+    font-size: 1.25em;
+}
