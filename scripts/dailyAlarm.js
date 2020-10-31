@@ -37,6 +37,6 @@ function dailyAlarm() {
     }
 
     //OUTPUT 
-    document.getElementById("output").innerHTML = holiday + " " + message;
+    document.getElementById("output").innerHTML = message + " " + holiday;
     document.getElementById("random").innerHTML = Math.random() + " random #";
 }
