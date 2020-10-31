@@ -1,7 +1,7 @@
 function dailyAlarm() {
     //DECLARE:
     let message;
-
+    let holiday;
     //INPUT: The Date() getMonth() getDate() and getToday() functions are used as input
     let now = new Date();
     let month = now.getMonth();
@@ -27,16 +27,16 @@ function dailyAlarm() {
     //PROCESSING: If today is a weekend day or it is a holiday assign the "message" variable "Sleep in today"
     //PROCESSING: If is not a weekend or a holiday set the "message" to "Get up"
     if (holiday === ("New Years Day" || "Independance Day" || "Christmas")) {
-        message = "Sleep in";
+        message = "Sleep in!";
     }
     else if (dayOfWeek === 0 || dayOfWeek === 6) {
-        message = "Sleep in"
+        message = "Today is a weekend, Sleep in!"
     }
     else {
-        message = "Today is a weekday, Get up";
+        message = "Today is a weekday, Get up!";
     }
 
     //OUTPUT 
-    document.getElementById("output").innerHTML = message + " " + holiday;
+    document.getElementById("output").innerHTML = holiday + " " + message;
     document.getElementById("random").innerHTML = Math.random() + " random #";
 }
