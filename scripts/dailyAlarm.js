@@ -6,8 +6,8 @@ function dailyAlarm() {
     let now = new Date();
     let month = now.getMonth();
     let dayOfMonth = now.getDate();
-   // let dayOfWeek = now.getDay();
-let dayOfWeek = 5;
+    let dayOfWeek = now.getDay();
+
 
     //PROCESSING: Determine if today is a holiday
     //PROCESSING: If today is a hoiday assign the variable "holiday" with the holiday name 
