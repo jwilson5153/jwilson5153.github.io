@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Five Times</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Week 9: fiveTimes.html</h1>
+            <h2>Jim Wilson</h2>
+        </header>
+        <main>
+            <h3>Five Times</h3>
+            <hr>
+            <p id="output"></p>
+        </main>
+        <footer>
+            &copy;2020 &bull; Jim Wilson &bull; BYU-Idaho &bull; CIT 160-16
+        </footer>
+        <script>
+            let table = "";
+            for (let i = 1; i <= 12; i++) {
+               table += `5 x ${i} = ${5 * i}<br>`;
+            }
+               document.getElementById('output').innerHTML = table;
+            
+        </script>
+    </body>
+</html>

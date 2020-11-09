@@ -50,5 +50,8 @@ label {
 }
 
 #output {
-    font-size: 1.25em;
+	font-size: 1.25em;
+	text-align: left;
+	width: 100px;
+	margin: 0 auto;
 }
