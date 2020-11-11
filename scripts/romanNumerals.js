@@ -33,25 +33,25 @@ function findRomanNumerals() {
             C = "CC";
             break;
         case "3":
-            c = "CCC";
+            C = "CCC";
             break;
         case "4":
-            c = "CD";
+            C = "CD";
             break;
         case "5":
-            c = "D";
+            C = "D";
             break;
         case "6":
-            c = "DC";
+            C = "DC";
             break;
         case "7":
-            c = "DCC";
+            C = "DCC";
             break;
         case "8":
-            c = "DCCC";
+            C = "DCCC";
             break;
         case "9":
-            c = "CM";
+            C = "CM";
             break;
     }
     switch (x) {
@@ -65,25 +65,25 @@ function findRomanNumerals() {
             X = "XX";
             break;
         case "3":
-            x = "XXX";
+            X = "XXX";
             break;
         case "4":
-            x = "XL";
+            X = "XL";
             break;
         case "5":
-            x = "L";
+            X = "L";
             break;
         case "6":
-            x = "LX";
+            X = "LX";
             break;
         case "7":
-            x = "LXX";
+            X = "LXX";
             break;
         case "8":
-            x = "LXXX";
+            X = "LXXX";
             break;
         case "9":
-            x = "XC";
+            X = "XC";
             break;
     }
     switch (i) {
@@ -97,25 +97,25 @@ function findRomanNumerals() {
             I = "II";
             break;
         case "3":
-            i = "III";
+            I = "III";
             break;
         case "4":
-            i = "IV";
+            I = "IV";
             break;
         case "5":
-            i = "V";
+            I = "V";
             break;
         case "6":
-            i = "VI";
+            I = "VI";
             break;
         case "7":
-            i = "VII";
+            I = "VII";
             break;
         case "8":
-            i = "VIII";
+            I = "VIII";
             break;
         case "9":
-            i = "IX";
+            I = "IX";
             break;
     }
     let romanNumeral = M + C + X + I;
