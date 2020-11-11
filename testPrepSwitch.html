@@ -20,7 +20,32 @@ switch (x) {
     text = "No value found";
 }
 document.getElementById("demo").innerHTML = text;
+
+function numberGuessGame() {
+    var message =
+        "I'm thinking of a number between 1 and 100.
+" +
+        "Try to guess it!
+" +
+        "Please enter an integer between 1 and 100.";
+    var answer = 38;
+    var guess;
+    do {
+        guess = parseInt(prompt(message));
+        if (guess < answer) {
+            message = guess +
+            " is too low. Please enter another integer.";
+        }
+        else if (guess > answer) {
+            message = guess +
+            " is too high. Please enter another integer.";
+        }
+    } while (guess != answer);
+    message = guess + " is correct!";
+    alert(message);
+}
 </script>
+
 
 </body>
 </html>
