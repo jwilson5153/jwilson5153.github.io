@@ -8,7 +8,7 @@ function sumOdds() {
     let sumOdd = 0;
     //PROCESSING: Use a while loop to iterate from "number" to "endingNumber" and add each odd number to "sumOdd".
     while (number <= endingNumber) {
-        if (number %2 != 0) {
+        if (number % 2 != 0) {
             sumOdd = sumOdd + number;
         }
         number += 1;
