@@ -12,7 +12,7 @@ function power() {
         power = p + Math.pow(2, p);
         if (p < 31) {
             powerOut = powerOut + power + ", ";
-            p = p++;
+
         } else {
             powerOut = powerOut + power;
         }
