@@ -9,7 +9,7 @@ function power() {
     let p = 0;
     //Calculate the powers of 2 from 0 through 31
     for (p = 0; p <= 31;) {
-        power = p + Math.pow(2, p);
+        power = Math.pow(2, p);
         if (p < 31) {
             powerOut = powerOut + power + ", ";
 
