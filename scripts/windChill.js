@@ -8,7 +8,7 @@ function doInputOutput() {
     let t = parseInt(document.getElementById("temperature").value);
     let s = parseInt(document.getElementById("windspeed").value);
     //Decide if the specs have been met to calculate windchill. 
-    if (t < 50.00 && s > 3.00) {
+    if (t < 50.00 && s > 3.009) {
         //Call the windChill function if the specs have been met
         windChill(t, s)
     } else {
