@@ -5,15 +5,15 @@
  */
 function doInputOutput() {
     //Obtain temperature in Farenheit and wind speed in miles per hour from user
-    let t = parseInt(document.getElementById("temperature").value);
-    let s = parseInt(document.getElementById("windspeed").value);
+    let t = parseFloat(document.getElementById("temperature").value);
+    let s = parseFloat(document.getElementById("windspeed").value);
     //Decide if the specs have been met to calculate windchill. 
-    if (t < 50.00 && s > 3.009) {
+    if (t < 50 && s > 3) {
         //Call the windChill function if the specs have been met
         windChill(t, s)
     } else {
         //Inform the user if the specs have not been met.
-        document.getElementById("output").innerHTML = "The temperature must be lower that 50 Farenheit and the windspeed bust be more that 3 mph."
+        document.getElementById("output").innerHTML = "The temperature must be lower that 50 Farenheit and the windspeed must be more that 3 mph."
     }
 
 }
