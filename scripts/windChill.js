@@ -8,7 +8,7 @@ function doInputOutput() {
     let t = parseInt(document.getElementById("temperature").value);
     let s = parseInt(document.getElementById("windspeed").value);
     //Decide if the specs have been met to calculate windchill. 
-    if (t < 50 && s > 3) {
+    if (t < 50.00 && s > 3.00) {
         //Call the windChill function if the specs have been met
         windChill(t, s)
     } else {
@@ -19,7 +19,7 @@ function doInputOutput() {
 }
 //Use the windChill function to calculate the wind chill
 function windChill(t, s) {
-    let windchill = (35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16).toFixed(2));
+    let windchill = (35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16).toFixed(2) + 0.4275 * t * Math.pow(s, 0.16).toFixed(2));
     //OUTPUT
     //Inform the user about the wind chill
     document.getElementById("output").innerHTML = "The windchill is " + windchill + " Farenheit";
