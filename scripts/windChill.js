@@ -19,7 +19,9 @@ function doInputOutput() {
 }
 //Use the windChill function to calculate the wind chill
 function windChill(t, s) {
-    let windchill = (35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16).toFixed(2) + 0.4275 * t * Math.pow(s, 0.16).toFixed(2));
+    let windchill = (35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16));
+    //Limit windchill to 2 decimal places
+    windchill = windchill.toFixed(2);
     //OUTPUT
     //Inform the user about the wind chill
     document.getElementById("output").innerHTML = "The windchill is " + windchill + " Farenheit";
