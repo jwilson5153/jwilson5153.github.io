@@ -25,10 +25,9 @@ h2,
 }
 
 main {
-	margin: 10px auto;
+	margin: 20px 20px 20px 20px;
 	border: 1px solid #999;
 	padding: 10px;
-	max-width: 500px;
 	background-color: #abe;
 	box-shadow: 0 0 30px;
 }
@@ -54,9 +53,50 @@ label {
 	color: white;
 }
 
-#output {
+.output {
 	font-size: 1.25em;
 	text-align: center;
 	width: 100%;
-	margin: 0 auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 10px;
+	background: white;
+}
+
+.hdr {
+	grid-area: header;
+}
+
+.sidebartl {
+	grid-area: sidebartl;
+}
+
+.sidebartr {
+	grid-area: sidebartr;
+}
+
+.main {
+	grid-area: main;
+}
+
+.sidebarmainl {
+	grid-area: sidebarmainl;
+}
+
+.sidebarmainr {
+	grid-area: sidebarmainr;
+}
+
+.ftr {
+	grid-area: footer;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 2fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"sidebartl header header sidebartr"
+		"sidebarmainl main main sidebarmainr"
+		"sidebarftl footer footer sidebarftr";
 }
