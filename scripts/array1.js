@@ -20,7 +20,7 @@ function test() {
         "Sum of array 1 first and last values = " + sum1 + '<br>' +
         "Sum of array 2 first and last values = " + sum2 + '<br>' +
         "Middle element of array 1 = " + mid1 + '<br>' +
-        "Middle element of array 2 = " + mid2;
+        "Average of middle elements of array 2 = " + mid2;
 
     // Display the output string for the user to see.
     document.getElementById('output').innerHTML = output;
