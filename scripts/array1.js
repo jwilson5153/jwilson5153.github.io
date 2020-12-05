@@ -33,7 +33,7 @@ function addEnds(list) {
 }
 
 function getMiddle(list) {
-    if ((list.length % 2) == 0) {
+    if (list.length % 2 == 0) {
         mid = (list[list.length / 2 | 0] + list[(list.length / 2 | 0) - 1]) / 2;
     } else {
         mid = list[list.length / 2 | 0];
