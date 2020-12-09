@@ -13,7 +13,7 @@ function test() {
 
     // Test the multiply function by calling it two times.
     let mult1 = multiply(list1, 3);
-    let mult2 = multiply(list2, 4);
+    let mult2 = multiply(list2, 2);
 
     // Build a string to display to the user.
     let output =
