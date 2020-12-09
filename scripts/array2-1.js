@@ -17,10 +17,10 @@ function test() {
 
     // Build a string to display to the user.
     let output =
-        "# of even numbers in list1 ( " + count1 + '<br>' +
-        "# of even numbers in list2 ( " + count2 + '<br>' +
-        "Product of each list element and the list length is [ " + mult1 + '<br>' +
-        "Product of each list element and the list length is [ " + mult2;
+        "# of even numbers in list1 ( " + count1 + " " + '<br>' +
+        "# of even numbers in list2 ( " + count2 + " " + '<br>' +
+        "Product of each list element and the list length is [ " + mult1 + " " + '<br>' +
+        "Product of each list element and the list length is [ " + mult2 + " ";
 
     // Display the output string for the user to see.
     document.getElementById('output').innerHTML = output;
