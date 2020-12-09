@@ -17,8 +17,8 @@ function test() {
 
     // Build a string to display to the user.
     let output =
-        "# of even numbers in list1 [ " + count1 + '<br>' +
-        "# of even numbers in list2 [ " + count2 + '<br>' +
+        "# of even numbers in list1 ( " + count1 + '<br>' +
+        "# of even numbers in list2 ( " + count2 + '<br>' +
         "Product of each list element and the list length is [ " + mult1 + '<br>' +
         "Product of each list element and the list length is [ " + mult2;
 
@@ -33,6 +33,7 @@ function countEvens(list) {
             count = count + 1;
         }
     }
+    count = count + ")";
     return count;
 }
 
@@ -41,5 +42,6 @@ function multiply(list, multiplier) {
     for (i = 0; i <= list.length - 1; i++) {
         product[i] = list[i] * multiplier;
     }
+    product = product + "]";
     return product;
 }
