@@ -36,7 +36,7 @@ function countEvens(list) {
     return count;
 }
 
-function multiply(list, mulitplier) {
+function multiply(list, multiplier) {
     let product = [];
     for (i = 0; i <= list.length - 1; i++) {
         product[i] = list[i] * multiplier;
