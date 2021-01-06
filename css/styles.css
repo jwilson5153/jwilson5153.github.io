@@ -28,6 +28,17 @@ p {
 	margin: 0 auto;
 }
 
+img {
+    height: 160px;
+    float: right;
+    box-shadow: 1px 4px 25px #000;
+    margin: 0;
+    border-radius: 12px;
+    border-style: outset;
+    border: 3px ridge #fff;
+}
+
+
 main {
 	margin: 20px 20px 20px 20px;
 	border: 1px solid #999;
