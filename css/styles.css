@@ -19,13 +19,14 @@ footer {
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	color: #fff;
-	margin: 0 auto;
+	text-align: center;
 }
 
 p {
-	margin: 0 auto;
+	text-align: center;
 }
 
 img {
