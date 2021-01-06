@@ -20,12 +20,12 @@ footer {
 
 h1,
 h2 {
+	color: #fff;
 	margin: 0;
 }
 
-h2,
-#currentdate {
-	color: yellow;
+p {
+	margin: 0 auto;
 }
 
 main {
