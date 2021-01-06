@@ -1,10 +1,11 @@
 body {
-	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: medium;
 }
 
 header,
 footer {
-	background-color: #000;
+	background-color: green;
 	color: #fff;
 	padding: 10px;
 }
@@ -32,71 +33,7 @@ main {
 	box-shadow: 0 0 30px;
 }
 
-h3 {
-	font-size: 24px;
-	margin: 0 0 15px 0;
-	border-bottom: 1px solid #333;
-	padding: 0;
-}
 
-label {
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-right: 35px;
-}
 
-.btnColor {
-	background-color: green;
-	color: white;
-}
 
-#output {
-	font-weight: bold;
-	text-align: center;
-	width: 100%;
-	padding-left: 40px;
-	padding-right: 40px;
-	margin-left: 10px;
 
-}
-
-.hdr {
-	grid-area: header;
-}
-
-.sidebartl {
-	grid-area: sidebartl;
-}
-
-.sidebartr {
-	grid-area: sidebartr;
-}
-
-.main {
-	grid-area: main;
-}
-
-.sidebarmainl {
-	grid-area: sidebarmainl;
-}
-
-.sidebarmainr {
-	grid-area: sidebarmainr;
-}
-
-.ftr {
-	grid-area: footer;
-}
-
-.container {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 2fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-		"sidebartl header header sidebartr"
-		"sidebarmainl main main sidebarmainr"
-		"sidebarftl footer footer sidebarftr";
-}
