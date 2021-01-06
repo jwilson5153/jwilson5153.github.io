@@ -1,10 +1,7 @@
 body {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: medium;
-	max-width: 500px;
-	width: 0 auto;
-	
-
+	max-width: 720px;
 }
 
 header,
@@ -37,7 +34,9 @@ main {
 	box-shadow: 0 0 30px;
 }
 
-
+.container {
+	width: 0 auto;
+}
 
 
 
