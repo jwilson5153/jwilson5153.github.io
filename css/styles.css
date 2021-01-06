@@ -3,6 +3,7 @@ body {
 	font-size: medium;
 	margin: 0 auto;
 	max-width: 720px;
+	background-color:rgba(238, 180, 104, 0.945);
 }
 
 header,
