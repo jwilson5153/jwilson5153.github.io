@@ -25,9 +25,13 @@ footer a {
 
 
 h1,
-h2,
 h3 {
 	color: #fff;
+	text-align: center;
+}
+
+h2 {
+	color: #191970;
 	text-align: center;
 }
 
