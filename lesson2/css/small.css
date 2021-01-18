@@ -1,7 +1,7 @@
 body {
   border-color: #12731e;
   max-width: 1200px;
-  width: 0 auto;
+  margin: 0 auto;
 }
 
 .maingrid {
