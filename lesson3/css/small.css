@@ -47,6 +47,9 @@ img {
   width: 100%;
   padding: 7px;
 }
+main h2 img {
+  width: 25%;
+}
 li img {
   width: 25%;
 }
@@ -110,7 +113,7 @@ nav ul {
 }
 nav ul li a {
 	display: block;
-	color: #fff;
+	color: #8c862b;
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
