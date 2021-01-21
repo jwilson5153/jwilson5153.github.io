@@ -47,7 +47,8 @@ img {
   width: 100%;
   padding: 7px;
 }
-main h2 img {
+main img {
+  margin-top: 15px;
   width: 25%;
 }
 li img {
