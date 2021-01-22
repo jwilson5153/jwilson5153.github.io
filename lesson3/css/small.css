@@ -18,26 +18,38 @@ main {
   display: block;
   margin-top: 15px;
   font-family: "Prompt", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items:center;
 }
+
 h1 {
   font-size: 2.5rem;
 }
+
 h2 {
   font-size: 2rem;
   font-weight: 400;
 }
+
 h3 {
   font-size: 1.25rem;
 }
 }
+
 h1,
 h2,
-h3, h4 {
+h3,
+h4 {
   font-family: "Cinzel", serif;
 }
+
 ul {
   list-style-type: none;
 }
+
 p,
 a {
   padding-left: 10px;
@@ -47,13 +59,16 @@ img {
   width: 100%;
   padding: 7px;
 }
+
 main img {
   margin-top: 15px;
   width: 25%;
 }
+
 li img {
   width: 25%;
 }
+
 table {
   border-collapse: collapse;
   border: 1px solid black;
@@ -65,8 +80,9 @@ table {
 th,
 td {
   border: 1px solid black;
-  text-align:center;
+  text-align: center;
 }
+
 footer {
   background-color: #8bbbd9;
   padding: 10px;
@@ -74,6 +90,29 @@ footer {
   font-size: small;
   margin-top: 15px;
 }
+article {
+  margin: 0.5rem;
+  background-color: #8bbbd9;
+  border: 3px solid #8c862b;
+  padding: 0 1rem;
+  width: 100%;
+  text-align: center;
+}
+main article {
+  margin: 0.5rem;
+  background-color: #d99848;
+  border: 3px solid #8c862b;
+  padding: 0 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+main picture {
+  display: none;
+  margin: 0.5rem;
+  width: 50%;
+}
+
 .bpc1 {
   background-color: #8bbbd9;
   color: black;
@@ -98,36 +137,83 @@ footer {
   background-color: #d99848;
   color: black;
 }
-.ptitle {
+
+.site-header {
+  background-color: #8bbbd9;
+  color: black;
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+}
+
+.pri-navigation,
+.ftr-navigation,
+.p {
+  background-color: #8bbbd9;
+  color: black;
+  font-family: "Prompt", sans-serif;
+  font-size: 0.95rem;
+}
+
+.h1 {
+  background-color: #8bbbd9;
+  color: black;
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+}
+
+.h2 {
+  background-color: #8bbbd9;
+  color: black;
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+}
+
+.h3 {
+  background-color: #8bbbd9;
+  color: black;
+  font-family: "Cinzel", serif;
   font-size: 1.5rem;
 }
+
+.h4 {
+  background-color: #8bbbd9;
+  color: black;
+  font-family: "Cinzel", serif;
+  font-size: 1.25rem;
+}
+
 nav {
-	background-color: #d99848;
-	text-align: center;
-	box-shadow: 0 2px 15px gray;
+  background-color: #d99848;
+  text-align: center;
+  box-shadow: 0 2px 15px gray;
 }
+
 nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+
 nav ul li a {
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 0.75rem;
-	text-decoration: none;
-	font-size: 0.95rem;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
 }
+
 nav a:hover {
-	background-color: #bbb;
-	color: #36454f;
+  background-color: #bbb;
+  color: #36454f;
 }
+
 .active {
-	color: yellow;
+  color: yellow;
 }
+
 .color-scheme {
-margin: 0 auto;
-text-align:center;
+  margin: 0 auto;
+  text-align: center;
 }
