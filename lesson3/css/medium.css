@@ -10,7 +10,7 @@
   main {
     grid-template-columns: 1fr 1fr;
   }
-  article:nth-child(3) {
+  article:nth-last-child(1):nth-child(odd) {
     grid-column: span 2;
   }
   main picture {
