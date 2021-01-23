@@ -17,7 +17,6 @@ header {
 main {
   display: block;
   margin-top: 15px;
-  font-family: "Prompt", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
@@ -53,6 +52,7 @@ ul {
 p,
 a {
   padding-left: 10px;
+  font-family: "Prompt", sans-serif;
 }
 
 img {
