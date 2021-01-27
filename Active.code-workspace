@@ -8,5 +8,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jwilson5153.github.io"
+	}
 }

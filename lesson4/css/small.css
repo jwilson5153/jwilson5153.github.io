@@ -1,0 +1,87 @@
+body {
+  border-color: #12731e;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #8bbbd9;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img {
+  width: 80px;
+  height: auto;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  margin: 0 0 0 17px;
+}
+
+.motto {
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 1pt;
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+nav {
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: #8c862b;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+  display: block;
+}
+main h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+main article {
+  font-family: "Prompt", sans-serif;
+  background-color: #d99848;
+  border: 3px solid #8c862b;
+  margin: 1em;
+  padding: 1em;
+}
+
+footer {
+  background-color: #8bbbd9;
+  text-align: center;
+  padding: 1em;
+}
