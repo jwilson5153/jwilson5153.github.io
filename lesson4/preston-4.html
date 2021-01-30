@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jim Wilson">
 <meta name="description" content="This page is the week 2 assgnment for WDD 230-12.">
-<title>Jim Wilson WDD230 Weather Site Preston Page</title>
+<title>Telegraph Weather Site Preston Page</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sansita+Swashed:wght@800&display=swap"
@@ -16,57 +16,77 @@
 
 <body>
     <header>
-        <picture><img src="images/logo.png" alt="Telegraph Weather logo"></picture>
-        <section class="headings">
-            <h1>Telegraph Weather</h1>
-            <div class="motto">Weather, News, and Helpful Info </div>
+        <section class="logo-headings">
+            <picture><img src="images/logo.png" alt="Telegraph Weather logo"></picture>
+            <section class="headings">
+
+                <h1>Telegraph Weather</h1>
+                <div class="motto">Weather, News, and Helpful Info </div>
+
+            </section>
         </section>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">🍔 Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-4.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul class="navigation">
-            <li><a class="ham" href="#">🍔 Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="preston-4.html">Preston</a></li>
-            <li><a href="sodasprings.html">Soda Springs</a></li>
-            <li><a href="fishhaven.html">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
+
     <main>
         <h2>Preston Idaho</h2>
-        <article>
-            <p>Hero Image/Weather Summary</p>
-            <a>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam unde hic laudantium sint aspernatur iusto
-                inventore repudiandae, soluta nemo? Suscipit ex libero praesentium voluptatem officiis dolor debitis sit
-                excepturi esse!</a>
-        </article>
-        <article>
-            <p>5 Day Forcast</p><a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo autem aperiam
-                expedita nisi qui cum
-                harum dolorum aliquid sequi eligendi corrupti praesentium quae sed, vitae suscipit inventore ipsa iste
-                earum.</a>
-        </article>
-        <article>
-            <p>Article</p><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur atque tenetur molestiae
-                illum velit nulla
-                inventore excepturi voluptatum magnam minima voluptas impedit, laborum deleniti assumenda, neque
-                asperiores
-                ad sunt similique?</a>
-        </article>
-        <article>
-            <p>Contact Info</p><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, accusamus, nam sit
-                delectus asperiores
-                dolore tempore porro quae ducimus sed, vero blanditiis. Expedita voluptates distinctio numquam animi
-                laboriosam ipsum possimus.</a>
+        <section class="summary">
+            <figure class="hero"><img src="images\johannes-plenio-2QUvkQTBh5s-unsplash.jpg" alt="Storm" />
+            </figure>
+            <article>
+                <p>Weather Summary</p>
+                <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eveniet nulla animi vitae enim porro
+                    cupiditate reprehenderit unde facilis, aliquid ut, aperiam voluptatibus ducimus doloribus provident
+                    voluptate et voluptatem! Eum?</a>
+            </article>
+        </section>
+        <section class="fivedaysummary">
+            <p>5 Day Summary</p>
+            <figure><img src="https://picsum.photos/50" alt="Day 1 Summary">
+                <img src="https://picsum.photos/50" alt="Day 2 Summary">
+                <img src="https://picsum.photos/50" alt="Day 3 Summary">
+                <img src="https://picsum.photos/50" alt="Day 4 Summary">
+                <img src="https://picsum.photos/50" alt="Day 5 Summary">
+            </figure>
+        </section>
+        <article class="feature">
+
+            <a class="featurearticle"><strong>Article Title</strong></br>Lorem ipsum dolor sit amet consectetur
+                optio alias
+                repudiandae possimus illum distinctio cupiditate autem.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Rerum magnam maxime quo in architecto similique assumenda repellendus incidunt? Magni
+                ducimus quaerat culpa molestias ipsam? Consectetur et dolor deleniti expedita repudiandae!laboriosam
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quidem, nisi tempore minima voluptatem
+                error voluptatibus soluta labore minus cum, consequatur eveniet, eligendi earum? In ullam magnam
+                assumenda dolorem illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sapiente
+                expedita quae voluptatibus a tempore corrupti culpa nihil nam praesentium similique quasi, optio alias
+                repudiandae possimus illum distinctio cupiditate autem.</a>
+            <img class="featureimage" src="https://fakeimg.pl/250x100/555555/" alt="Feature Placeholder">
+
         </article>
     </main>
     <footer>
-        <h3>&copy; <span id="thisYear"></span> &#10072; Jim Wilson &#10072; Nevada &#10072; <a
+        <p>Contact Information</p>
+        <ul>
+            <li>Email</li>
+            <li>Phone</li>
+            <li>Address</li>
+        </ul>
+        <figure><img class="map" src="https://fakeimg.pl/250x100/555555/" alt="Map Placeholder"></figure>
+        <h3>&copy; <span id=" thisYear"></span> &#10072; Jim Wilson &#10072; Nevada &#10072; <a
                 href="https://www.byui.edu/online">BYUI
                 Online Learning</a></h3>
         <p><span id="lastModified"></span></p>
-        <p><a href="../index.html">Back to Assignment Portal</a></p>
     </footer>
     <script src="js/dates.js"></script>
     <script src="js/ham.js"></script>
