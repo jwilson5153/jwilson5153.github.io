@@ -19,10 +19,20 @@
   footer {
     max-width: 80%;
   }
+  .herodiv {
+    position: relative;
+    margin: 10px auto;
+  }
+  .hero-photo-div {
+    margin: 10px auto;
+  }
   .summary {
     position: absolute;
     top: 1.2rem;
     left: 1.2rem;
+    background: radial-gradient(#eee, #8bbbd9);
+    box-shadow: 0 0 30px #111;
+    opacity: 0.8;
   }
 
   .navigation {
