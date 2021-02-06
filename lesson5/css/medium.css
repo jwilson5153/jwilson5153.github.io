@@ -2,8 +2,14 @@
   header {
     display: block;
   }
+  .logo-headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .headings {
     display: flex;
+    flex-direction: column;
   }
   nav {
     max-width: 100%;

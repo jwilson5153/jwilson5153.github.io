@@ -9,13 +9,10 @@ header {
   background-color: #8bbbd9;
 }
 .logo-headings {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
-.headings {
-  display: flex;
-  flex-direction: column;
+.logo-headings img {
+  max-width: 25%;
 }
 nav {
   background-color: #d99848;
@@ -125,4 +122,17 @@ main ul {
 */
 .responsive li {
   display: block;
+}
+
+.bannernone {
+  display: none;
+}
+
+.banner {
+  display: block;
+  background-color: #8c862b;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
 }
