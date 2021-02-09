@@ -55,7 +55,8 @@
   .navigation li:first-child {
     display: none;
   }
-  .featureimage {
+  .feature img {
+    width: 25vw;
     float: right;
   }
   .contact {

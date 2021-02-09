@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sansita+Swashed:wght@800&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Prompt&display=swap"
     rel="stylesheet">
 <link rel="stylesheet" href="css/small.css">
 <link rel="stylesheet" href="css/medium.css">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div id="banner" class="bannernone">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+    <div id="banner" class="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
         pavilion.
     </div>
     <header>
@@ -45,7 +45,11 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="herodiv">
-            <div class="hero-photo-div"><img src="https://picsum.photos/1440/275"></div>
+            <picture class="hero-photo-div">
+                <source media="(max-width: 600px)" srcset="images/wdd230_image_franklinOriginal_600.jpg">
+                <source media="(max-width: 1200px)" srcset="images/wdd230_image_franklinOriginal_1200.jpg">
+                <img src="images/wdd230_image_franklinOriginal_1440.jpg">
+            </picture>
             <section class="summary">
                 <h3>Weather Summary</h3>
                 <p>Label: Summary</p>
@@ -83,12 +87,12 @@
         <section id="contact">
             <h3>Contact Information</h3>
             <div class="contact">
+                <figure><img class="map" src="https://picsum.photos/300"></figure>
                 <ul>
                     <li>Email: eee@eeee.eee</li>
                     <li>Phone: 555 555 1212</li>
                     <li>Address: 123 Oak Dr Preston </li>
                 </ul>
-                <figure><img class="map" src="https://picsum.photos/300"></figure>
             </div>
         </section>
     </main>
@@ -99,6 +103,8 @@
     <script src="js/currentDate.js"></script>
     <script src="js/ham.js"></script>
     <script src="js/banner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> src = "js/webFontLoad.js"</script>
 </body>
 
 </html>

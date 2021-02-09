@@ -123,10 +123,6 @@ main ul {
   display: block;
 }
 
-.bannernone {
-  display: none;
-}
-
 .banner {
   display: block;
   background-color: #8c862b;
