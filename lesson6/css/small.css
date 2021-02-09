@@ -62,14 +62,17 @@ main ul {
 .fivedaysummary {
   margin: 2em 0 0 0;
 }
-.fivedaysummary div {
-  max-width: 100%;
+.fivedayimages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  max-width: 80%;
+}
+.fivedayimages figure {
+  width: 10em;
   background-color: #d99848;
   padding: 1em 0;
-}
-.fivedaysummary figure {
-  display: flex;
-  justify-content: space-evenly;
 }
 .feature {
   background-color: #d99848;
