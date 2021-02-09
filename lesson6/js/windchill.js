@@ -1,4 +1,3 @@
-// 
 //
 // Obtain the ambient air temperature
 let t = parseInt(document.getElementById("temp").innerText);
