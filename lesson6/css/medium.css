@@ -1,0 +1,57 @@
+@media only screen and (min-width: 38em) {
+  header {
+    display: block;
+  }
+  .logo-headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headings {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    max-width: 100%;
+  }
+  header nav ul {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  main {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  footer {
+    max-width: 80%;
+  }
+  .herodiv {
+    position: relative;
+    margin: 10px auto;
+  }
+  .hero-photo-div {
+    margin: 10px auto;
+  }
+  .summary {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    background: radial-gradient(#eee, #8bbbd9);
+    box-shadow: 0 0 30px #111;
+    opacity: 0.8;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    font-size: small;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+}

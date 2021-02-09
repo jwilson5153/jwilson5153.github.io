@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;
 }
-body {
-  border-color: #12731e;
-}
 
 header {
   background-color: #8bbbd9;
@@ -49,21 +46,17 @@ main h2 {
 
 main ul {
   background-color: #d99848;
-  border: 3px solid #8c862b;
+  list-style-type: none;
+  line-height: 1.5;
 }
 .herodiv {
-  width: 100%;
+  max-width: 90%;
 }
-
 .hero-photo-div {
-  background-color: #eee;
-  border: 1px solid #333;
-  width: 100%;
-  height: 275px;
+  max-width: 100%;
 }
 .summary {
   background: #8bbbd9;
-  border: 1px solid #000;
   padding: 1.5rem;
 }
 .fivedaysummary {
@@ -72,7 +65,6 @@ main ul {
 .fivedaysummary div {
   max-width: 100%;
   background-color: #d99848;
-  border: 3px solid #8c862b;
   padding: 1em 0;
 }
 .fivedaysummary figure {
@@ -81,15 +73,22 @@ main ul {
 }
 .feature {
   background-color: #d99848;
-  border: 3px solid #8c862b;
   margin: 1em 0;
   padding: 1em;
 }
 .feature img {
-  margin: 0 auto;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+#contact {
   padding: 1em;
   width: 100%;
 }
+.contact ul {
+  padding: 1em;
+}
+
 .active {
   background: #a3c9d9;
 }

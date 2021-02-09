@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  border-color: #12731e;
+}
+
+header {
+  background-color: #8bbbd9;
+}
+.logo-headings {
+  text-align: center;
+}
+.logo-headings img {
+  max-width: 25%;
+}
+nav {
+  background-color: #d99848;
+}
+main {
+  font-family: "Prompt", sans-serif;
+}
+footer {
+  background-color: #8bbbd9;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+.headings h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  margin: 0 1em 0 0;
+}
+
+.motto {
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 1pt;
+  margin-left: 1em;
+  padding-bottom: 1em;
+  font-size: 0.9rem;
+}
+
+main h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: #d99848;
+}
+
+main ul {
+  background-color: #d99848;
+  border: 3px solid #8c862b;
+}
+.herodiv {
+  width: 100%;
+}
+
+.hero-photo-div {
+  background-color: #eee;
+  border: 1px solid #333;
+  width: 100%;
+  height: 275px;
+}
+.summary {
+  background: #8bbbd9;
+  border: 1px solid #000;
+  padding: 1.5rem;
+}
+.fivedaysummary {
+  margin: 2em 0 0 0;
+}
+.fivedaysummary div {
+  max-width: 100%;
+  background-color: #d99848;
+  border: 3px solid #8c862b;
+  padding: 1em 0;
+}
+.fivedaysummary figure {
+  display: flex;
+  justify-content: space-evenly;
+}
+.feature {
+  background-color: #d99848;
+  border: 3px solid #8c862b;
+  margin: 1em 0;
+  padding: 1em;
+}
+.feature img {
+  margin: 0 auto;
+  padding: 1em;
+  width: 100%;
+}
+.active {
+  background: #a3c9d9;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: white;
+  background-color: #8c862b;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+  display: block;
+}
+
+.bannernone {
+  display: none;
+}
+
+.banner {
+  display: block;
+  background-color: #8c862b;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
