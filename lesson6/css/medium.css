@@ -15,11 +15,11 @@
     max-width: 100%;
   }
   header nav ul {
-    max-width: 80%;
+    max-width: 1440px;
     margin: 0 auto;
   }
   main {
-    max-width: 80%;
+    max-width: 1440px;
     margin: 0 auto;
   }
   footer {
@@ -28,9 +28,11 @@
   .herodiv {
     position: relative;
     margin: 10px auto;
+    max-width: 100%;
   }
   .hero-photo-div {
     margin: 10px auto;
+    max-width: 100%;
   }
   .summary {
     position: absolute;
@@ -40,7 +42,6 @@
     box-shadow: 0 0 30px #111;
     opacity: 0.8;
   }
-
   .navigation {
     display: flex;
   }
@@ -53,5 +54,13 @@
   }
   .navigation li:first-child {
     display: none;
+  }
+  .featureimage {
+    float: right;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
