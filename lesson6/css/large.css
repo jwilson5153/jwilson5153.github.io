@@ -1,5 +1,23 @@
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 1200px) {
   .navigation a {
     font-size: larger;
+  }
+  header {
+    max-width: 1440px;
+  }
+  header nav ul {
+    max-width: 1200px;
+  }
+  main {
+    max-width: 1200px;
+  }
+  footer {
+    max-width: 1440px;
+  }
+  .center_img {
+    max-width: 50%;
+  }
+  .currentDate {
+    max-width: 1440px;
   }
 }
