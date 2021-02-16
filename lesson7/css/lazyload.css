@@ -1,8 +1,8 @@
 body {
-  margin: 0 auto;
   max-width: 400px;
 }
 main {
+  margin: 0 auto;
   text-align: center;
 }
 article img[data-src] {
