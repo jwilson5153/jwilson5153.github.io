@@ -86,16 +86,22 @@
     float: right;
   }
 
-  .contact {
+  div.contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-auto-flow: row;
   }
+  div.contact h3 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    padding-left: 3em;
+  }
   div.contact ul {
     grid-column: 2;
     grid-row: 1 / 2;
-    margin: 0;
+    margin: 3em 0 0 0;
   }
   .center_img {
     grid-column: 1;
