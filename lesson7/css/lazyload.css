@@ -1,15 +1,21 @@
 body {
-  max-width: 400px;
-}
-main {
+  width: 600px;
   margin: 0 auto;
-  text-align: center;
-}
-article img[data-src] {
-  filter: blur(0.2em);
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-article img {
+picture img {
+  width: 100%; /*Include this line*/
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+picture img[data-src] {
+  filter: blur(1em);
+}
+
+picture img {
   filter: blur(0em);
-  transition: filter 0.5s;
+  transition: filter 1s;
 }

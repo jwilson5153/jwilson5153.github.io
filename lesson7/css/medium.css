@@ -23,6 +23,12 @@
     max-width: 800px;
     margin: 0 auto;
   }
+  div.gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6 auto);
+    gap: 20px;
+  }
   footer {
     max-width: 1200px;
   }

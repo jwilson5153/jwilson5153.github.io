@@ -11,6 +11,12 @@
   main {
     max-width: 1200px;
   }
+  div.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(4 auto);
+    gap: 20px;
+  }
   footer {
     max-width: 1440px;
   }
