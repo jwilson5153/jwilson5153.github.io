@@ -150,8 +150,6 @@
   }
 
   .currentDate {
-    display: block;
-    background-color: #8c862b;
     max-width: 1200px;
   }
 }

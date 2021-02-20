@@ -177,7 +177,7 @@ img.center_img {
 
 .banner {
   display: none;
-  background-color: #8c862b;
+  background-color: #302d04;
   color: white;
   text-align: center;
   margin: 0 auto;
@@ -185,6 +185,8 @@ img.center_img {
 }
 
 .currentDate {
+  display: block;
+  background-color: #8c862b;
   margin: 0 auto;
   padding: 0.5em;
   text-align: center;
