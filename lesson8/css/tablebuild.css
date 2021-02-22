@@ -1,0 +1,46 @@
+body {
+    max-width: 350px;
+    margin: 0 auto;
+}
+table {
+    font-family: Ubuntu, sans-serif;
+    box-shadow: 5px 5px 18px #628ca6;
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;  
+}
+table,
+th,
+td {
+  border: 2px solid grey;
+  border-collapse: collapse;
+}
+th, td {
+    padding: .5rem 0 .5rem 0;
+}
+thead th {
+  background-color: #7fb9c2;
+  color: black;
+  font-size:x-large;
+ }
+
+th {
+    background-color: #628ca6;
+    color: white;
+    font-size: large;
+}
+tr {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+tfoot td{
+    background-color: #7fb9c2;
+    font-size: x-small;
+}
+.exceedGoal {
+    background-color: #628ca6;
+    color: white;
+}
