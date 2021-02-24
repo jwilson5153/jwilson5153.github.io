@@ -1,6 +1,18 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
 * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* ---------- Body ------------------*/
+
+/* ---------- Header ------------------*/
 header {
   background-color: #8bbbd9;
   margin: 0 auto;
@@ -11,51 +23,6 @@ header {
 .logo-headings img {
   max-width: 25%;
 }
-nav {
-  background-color: #d99848;
-}
-main {
-  font-family: "Prompt", sans-serif;
-}
-div.gallery {
-  display: grid;
-  grid-template-columns: minmax(600px, 1fr);
-  gap: 3em;
-  margin: 0 0 3em 0;
-  padding: 0;
-}
-picture img[data-src] {
-  filter: blur(1em);
-}
-
-div.gallery img {
-  filter: blur(0em);
-  transition: filter 1s;
-  border-radius: 35%;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-div.gallery img:hover {
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05, 1.05);
-}
-div.gallery div {
-  text-align: center;
-  margin-bottom: 2em;
-}
-footer {
-  background-color: #8bbbd9;
-  text-align: center;
-  margin: 0 auto;
-  padding: 1em;
-}
-.headings h1 {
-  font-family: "Cinzel", serif;
-  font-size: 3.5rem;
-  margin: 0 1em 0 0;
-}
-
 .motto {
   font-family: "Prompt", sans-serif;
   letter-spacing: 1pt;
@@ -63,19 +30,43 @@ footer {
   padding-bottom: 1em;
   font-size: 0.9rem;
 }
-
-main h2 {
-  font-family: "Cinzel", serif;
-  font-size: 2.5rem;
-  text-align: center;
+/* ---------- Navigation ------------------*/
+nav {
   background-color: #d99848;
 }
-
-main ul {
-  background-color: #d99848;
-  list-style-type: none;
-  line-height: 1.5;
+.active {
+  background: #a3c9d9;
 }
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: white;
+  background-color: #8c862b;
+}
+/* ---------- Main ------------------*/
+main {
+  font-family: "Prompt", sans-serif;
+}
+
+/* ---------- Fish Haven page ------------------*/
+/* ---------- Preston page ------------------*/
 .herodiv {
   max-width: 100%;
 }
@@ -122,6 +113,126 @@ section.feature img {
   grid-row: 1;
 }
 
+/* ---------- Soda Spring page ------------------*/
+/* ---------- Storm Center page ------------------*/
+main h1.storm {
+  text-align: center;
+}
+/* ---------- Storm Center Form ------------------*/
+form {
+  margin: 0 auto;
+  max-width: 25rem;
+}
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: -5rem 2%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div,
+form label.stormRating {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgb(0, 0, 0, 0.1);
+  -webkit-appearance: none;
+}
+
+form label.stormRating input {
+  display: block;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0 0.75rem;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+/* ---------- Gallery page ------------------*/
+div.gallery {
+  display: grid;
+  grid-template-columns: minmax(600px, 1fr);
+  gap: 3em;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+picture img[data-src] {
+  filter: blur(1em);
+}
+
+div.gallery img {
+  filter: blur(0em);
+  transition: filter 1s;
+  border-radius: 35%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+div.gallery img:hover {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05, 1.05);
+}
+div.gallery div {
+  text-align: center;
+  margin-bottom: 2em;
+}
+/* ---------- Footer ------------------*/
+footer {
+  background-color: #8bbbd9;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+.currentDate {
+  display: block;
+  background-color: #8c862b;
+  margin: 0 auto;
+  padding: 0.5em;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
 .contact {
   display: block;
   padding: 1em;
@@ -144,37 +255,8 @@ img.center_img {
   margin: 0.5em auto;
   max-width: 80%;
 }
-.active {
-  background: #a3c9d9;
-}
 
-.navigation {
-  list-style: none;
-  padding: 0;
-}
-.navigation li:first-child {
-  display: block;
-}
-.navigation li {
-  display: none;
-}
-.navigation a {
-  display: block;
-  padding: 0.75rem;
-  text-align: left;
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-.navigation a:hover {
-  color: white;
-  background-color: #8c862b;
-}
-
-.responsive li {
-  display: block;
-}
-
+/*-- Banner --*/
 .banner {
   display: none;
   background-color: #302d04;
@@ -184,12 +266,32 @@ img.center_img {
   padding: 1em;
 }
 
-.currentDate {
-  display: block;
-  background-color: #8c862b;
-  margin: 0 auto;
-  padding: 0.5em;
-  text-align: center;
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.headings h1 {
   font-family: "Cinzel", serif;
-  font-weight: bold;
+  font-size: 3.5rem;
+  margin: 0 1em 0 0;
+}
+
+main h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: #d99848;
+}
+
+main ul {
+  background-color: #d99848;
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+.responsive li {
+  display: block;
 }
