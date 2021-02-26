@@ -138,8 +138,7 @@ form legend {
 }
 
 form label.top,
-form div,
-form label.stormRating {
+form div {
   display: block;
   padding-top: 1rem;
   color: #9c2c13;
@@ -187,6 +186,17 @@ form label.top input:required {
 
 form label.top input:required:valid {
   border-left: green solid 6px;
+}
+
+.stormRating {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.75rem 0;
+  color: #2075ff;
+}
+#ratingValue {
+  margin: 0 15px;
 }
 
 /* ---------- Gallery page ------------------*/
