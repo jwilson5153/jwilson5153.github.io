@@ -47,18 +47,18 @@
             <!-- Contact informatin section of form -->
             <fieldset>
                 <legend>Contact Information</legend>
-                <label class="top">Full Name <input type="text" name="fullname" required placeholder="John Doe"></label>
-                <label class="top">Email <input type="email" name="email" required
-                        placeholder="yourID@Your_mail.com"></label>
-                <label class="top">Phone <input type="tel" name="phone" required placeholder="5555551234"></label>
-                <label class="top">Zip Code <input type="text" name="zip" pattern="[0-9]{5}" title="Five digit zip code"
-                        required placeholder="12345"></label>
+                <label class="form1st">Full Name *<input type="text" name="fullname" pattern="[A-Za-z \s]{5,40}"
+                        required placeholder="John Doe"></label>
+                <label class="form1st">Email<input type="email" name="email" placeholder="yourID@Your_mail.com"></label>
+                <label class="form1st">Phone *<input type="tel" name="phone" required placeholder="5555551234"></label>
+                <label class="form1st">Zip Code *<input type="text" name="zip" pattern="[0-9]{5}"
+                        title="Five digit zip code" required placeholder="12345"></label>
             </fieldset>
             <!-- Storm reporting section of form -->
             <fieldset>
                 <legend>Storm Information</legend>
-                <label class="top">When did the storm occur? <input type="date" name="stormDate" required></label>
-                <label class="top">What is the storm type? <input list="typeofStorm" name="stormType" required
+                <label class="form1st">When did the storm occur? *<input type="date" name="stormDate"></label>
+                <label class="form1st">What is the storm type? *<input list="typeofStorm" name="stormType"
                         placeholder="Select storm type">
                     <datalist id="typeofStorm">
                         <option value="Flash Flood"></option>
@@ -69,7 +69,7 @@
                     </datalist></label>
                 <label class="stormRating" for="rating">Rating:&nbsp;&nbsp;&nbsp; <input type="range" id="rating"
                         value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
-                        onchange="adjustRatinmg(this.value)"><span id="ratingValue">5</span></label>
+                        onchange="adjustRating(this.value)"><span id="ratingValue">5</span></label>
                 <datalist id="tickmarks">
                     <option value="0"></option>
                     <option value="1"></option>
@@ -83,13 +83,14 @@
                     <option value="9"></option>
                     <option value="10"></option>
                 </datalist>
-                <label class="top">What is the storm region? <select name="region">
+                <label class="form1st">What is the storm region? <select name="region">
                         <option value disabled selected>Select Region</option>
                         <option value="fish-haven">Fish Haven</option>
                         <option value="preston">Preston</option>
                         <option value="soda-springs">Soda Springs</option>
                     </select>
                 </label>
+
             </fieldset>
             <!-- Verifying safty of storm reporter section of form -->
             <fieldset>
@@ -101,8 +102,9 @@
             <!-- Comment section of form -->
             <fieldset>
                 <legend>Comments</legend>
-                <label class="top">Comments Here <textarea name="comment" rows="5"
-                        placeholder="Please type your comments here"></textarea> </label>
+                <label class="form1st">Comments Here</label>
+                <textarea id="comment" name="comment" rows="6" cols="30"
+                    placeholder="Please type your comments here"></textarea>
             </fieldset>
             <!-- Form submission -->
             <input type="submit" value="Report Storm" class="submitBtn">
@@ -119,28 +121,27 @@
                 <li><i class="material-icons">contact_phone</i> Phone: 555 555 1212</li>
                 <li><i class="material-icons">mail</i> Address: 123 Oak Dr Preston </li>
             </ul>
-            <div class="social_links">
-                <div class="social_images">
-                    <figure class="item1"><a href="https://facebook.com"><img src="images/fb.png"
-                                alt="Facebook Link"></a>
-                        <figcaption>Facebook</figcaption>
-                    </figure>
-                    <figure class="item2"><a href="https://youtube.com"><img src="images/youtube.png"
-                                alt="YouTube Link"></a>
-                        <figcaption>YouTube</figcaption>
-                    </figure>
-                    <figure class="item3"><a href="https://instagram"><img src="images/instagram.png"
-                                alt="Instagram Link"></a>
-                        <figcaption>Instagram</figcaption>
-                    </figure>
-                </div>
-            </div>
             <div class="map_image">
                 <picture class="center_img">
                     <source media="(max-width: 600px)" srcset="images/seidaho420.jpg">
                     <source media="(max-width: 1200px)" srcset="images/seidaho280.jpg">
                     <img src="images/seidaho500.jpg" alt="Preston area map">
                 </picture>
+            </div>
+            <div class="social_links">
+                <!--div class="social_images">-->
+                <figure class="social-image"><a href="https://facebook.com"><img src="images/fbs.png"
+                            alt="Facebook Link"></a>
+                    <figcaption>Facebook</figcaption>
+                </figure>
+                <figure class="social-image"><a href="https://youtube.com"><img src="images/youtubets.png"
+                            alt="YouTube Link"></a>
+                    <figcaption>YouTube</figcaption>
+                </figure>
+                <figure class="social-image"><a href="https://instagram"><img src="images/instagrams.png"
+                            alt="Instagram Link"></a>
+                    <figcaption>Instagram</figcaption>
+                </figure>
             </div>
         </div>
     </footer>

@@ -35,7 +35,7 @@ nav {
   background-color: #d99848;
 }
 .active {
-  background: #a3c9d9;
+  background: #8bbbd9;
 }
 
 .navigation {
@@ -63,8 +63,63 @@ nav {
 /* ---------- Main ------------------*/
 main {
   font-family: "Prompt", sans-serif;
+  background-color: #8bbbd9;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+/* ---------- Footer ------------------*/
+footer {
+  background-color: #8bbbd9;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
 }
 
+/*.contact {
+  display: grid;
+  padding: 1em;
+  max-width: 100%;
+  grid-auto-flow: row;
+}*/
+.contact ul {
+  max-width: 75%;
+  padding: 5%;
+  margin: 0 auto;
+  list-style-type: none;
+  text-align: left;
+}
+div.contact img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+/*.social-image {
+  display: inline-block;
+}*/
+
+/*img.center_img {
+  display: block;
+  margin: 0.5em auto;
+  max-width: 80%;
+}*/
+.currentDate {
+  display: block;
+  background-color: #8c862b;
+  margin: 0 auto;
+  padding: 0.5em;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
+/*-- Banner --*/
+.banner {
+  display: none;
+  background-color: #302d04;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
 /* ---------- Fish Haven page ------------------*/
 /* ---------- Preston page ------------------*/
 .herodiv {
@@ -128,32 +183,33 @@ form fieldset {
   border: 1px solid #445ba9;
   border-radius: 10px;
   padding: 1rem 2%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 100%;
 }
 
 form legend {
-  color: #445ba9;
+  color: black;
   margin: 0 1rem;
   padding: 0 0.5rem;
+  font-size: larger;
+  font-weight: bold;
 }
 
-form label.top,
+form label.form1st,
 form div {
   display: block;
   padding-top: 1rem;
-  color: #9c2c13;
+  color: black;
   font-size: 0.8rem;
+  font-weight: bold;
 }
-
-form label.top input,
-form label.top select {
+form label.form1st input,
+form label.form1st select {
   display: block;
   font-size: 1rem;
   border: solid 1px #999;
   border-radius: 4px;
   padding: 0.75rem;
-  color: #555;
-  width: 100%;
   max-width: 20rem;
   background-color: rgb(0, 0, 0, 0.1);
   -webkit-appearance: none;
@@ -166,7 +222,7 @@ form label.stormRating input {
 form label.sbs {
   display: block;
   padding: 0 0.75rem;
-  color: #555;
+  color: #000;
 }
 
 form input.submitBtn {
@@ -180,12 +236,13 @@ form input.submitBtn {
   max-width: 20rem;
 }
 
-form label.top input:required {
-  border-left: red solid 6px;
+form label.form1st input:required {
+  background-color: pink;
 }
 
-form label.top input:required:valid {
-  border-left: green solid 6px;
+form label.form1st input:required:valid {
+  background-color: rgb(140, 134, 43);
+  color: white;
 }
 
 .stormRating {
@@ -198,16 +255,69 @@ form label.top input:required:valid {
 #ratingValue {
   margin: 0 15px;
 }
+textarea {
+  width: 100%;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: black;
+}
 
 /* ---------- Gallery page ------------------*/
-div.gallery {
+/* First the Grid */
+.gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* The Picture Frame */
+.gallery-frame {
+  padding: .5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #333;
+  color: #d9d9d9;
+}
+
+/* The Images */
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.gallery-img:hover {
+  opacity: .7;
+}
+/*div.gallery {
   display: grid;
   grid-template-columns: minmax(600px, 1fr);
   gap: 3em;
   margin: 0 0 3em 0;
   padding: 0;
 }
-picture img[data-src] {
+figure {
+  display: inherit;
+}
+figure img[data-src] {
   filter: blur(1em);
 }
 
@@ -215,7 +325,7 @@ div.gallery img {
   filter: blur(0em);
   transition: filter 1s;
   border-radius: 35%;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -226,62 +336,14 @@ div.gallery img:hover {
 div.gallery div {
   text-align: center;
   margin-bottom: 2em;
-}
-/* ---------- Footer ------------------*/
-footer {
-  background-color: #8bbbd9;
-  text-align: center;
-  margin: 0 auto;
-  padding: 1em;
-}
-.currentDate {
-  display: block;
-  background-color: #8c862b;
-  margin: 0 auto;
-  padding: 0.5em;
-  text-align: center;
-  font-family: "Cinzel", serif;
-  font-weight: bold;
-}
-.contact {
-  display: block;
-  padding: 1em;
-  max-width: 100%;
-}
-.contact ul {
-  max-width: 75%;
-  padding: 5%;
-  margin: 0 auto;
-  list-style-type: none;
-  text-align: left;
-}
+}*/
 
-.social_links {
-  display: none;
-}
-
-img.center_img {
-  display: block;
-  margin: 0.5em auto;
-  max-width: 80%;
-}
-
-/*-- Banner --*/
-.banner {
-  display: none;
-  background-color: #302d04;
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-/*----- Clearfix: Force an Element not to collapse -----*/
+/*----- Clearfix: Force an Element not to collapse -----
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 .headings h1 {
   font-family: "Cinzel", serif;
