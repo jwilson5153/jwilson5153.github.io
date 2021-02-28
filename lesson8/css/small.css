@@ -74,17 +74,44 @@ footer {
   margin: 0 auto;
   padding: 1em;
 }
-.contact ul {
+div.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  align-items: start;
+
+}
+div.contact ul {
   max-width: 75%;
   padding: 5%;
   margin: 0 auto;
   list-style-type: none;
   text-align: left;
 }
-div.contact img {
-  object-fit: scale-down;
+
+div.map_image figure {
+  max-height: 250px;
+  overflow: hidden;
+}
+div.map_image figure img {
   width: 100%;
-  height: 100%;
+}
+div.social_links {
+  max-height: 100px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-gap: 0.5rem;
+
+}
+div.social_links figure {
+  overflow: hidden;
+  position: relative;
+  /*display:grid;
+  grid-column: auto;*/
+}
+div.social_links figure {
+  width: 100%;
 }
 .currentDate {
   display: block;
