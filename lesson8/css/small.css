@@ -89,11 +89,11 @@ div.contact ul {
   text-align: left;
 }
 
-div.map_image figure {
+div.map_image picture {
   max-height: 250px;
   overflow: hidden;
 }
-div.map_image figure img {
+div.map_image picture img {
   width: 100%;
 }
 div.social_links {
@@ -107,8 +107,6 @@ div.social_links {
 div.social_links figure {
   overflow: hidden;
   position: relative;
-  /*display:grid;
-  grid-column: auto;*/
 }
 div.social_links figure {
   width: 100%;
