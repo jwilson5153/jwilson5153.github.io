@@ -22,6 +22,7 @@ header {
 }
 .logo-headings img {
   max-width: 25%;
+  height: auto;
 }
 .motto {
   font-family: "Prompt", sans-serif;
@@ -67,49 +68,39 @@ main {
   margin: 0 auto 2rem auto;
   padding: 1rem;
 }
+div.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.map_image {
+  display: none;
+}
+div.contactInfo {
+  display: grid;
+  grid-column: 1/2;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+div.item {
+  display: grid;
+  grid-column: 1/2;
+  align-items: left;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.social_links {
+  display: block;
+  grid-column: 1/2;
+  padding: 1rem;
+  margin: 1rem;
+}
 /* ---------- Footer ------------------*/
 footer {
   background-color: #8bbbd9;
   text-align: center;
   margin: 0 auto;
   padding: 1em;
-}
-div.contact {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 1rem;
-  align-items: start;
-
-}
-div.contact ul {
-  max-width: 75%;
-  padding: 5%;
-  margin: 0 auto;
-  list-style-type: none;
-  text-align: left;
-}
-
-div.map_image picture {
-  max-height: 250px;
-  overflow: hidden;
-}
-div.map_image picture img {
-  width: 100%;
-}
-div.social_links {
-  max-height: 100px;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-gap: 0.5rem;
-
-}
-div.social_links figure {
-  overflow: hidden;
-  position: relative;
-}
-div.social_links figure {
-  width: 100%;
 }
 .currentDate {
   display: block;

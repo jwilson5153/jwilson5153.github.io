@@ -1,0 +1,326 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* ---------- Body ------------------*/
+
+/* ---------- Header ------------------*/
+header {
+  background-color: #8bbbd9;
+  margin: 0 auto;
+}
+.logo-headings {
+  text-align: center;
+}
+.logo-headings img {
+  max-width: 25%;
+  height: auto;
+}
+.motto {
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 1pt;
+  margin-left: 1em;
+  padding-bottom: 1em;
+  font-size: 0.9rem;
+}
+/* ---------- Navigation ------------------*/
+nav {
+  background-color: #d99848;
+}
+.active {
+  background: #8bbbd9;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.navigation a:hover {
+  color: white;
+  background-color: #8c862b;
+}
+/* ---------- Main ------------------*/
+main {
+  font-family: "Prompt", sans-serif;
+  background-color: #8bbbd9;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+/* ---------- Footer ------------------*/
+footer {
+  background-color: #8bbbd9;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+div.contact {
+  display: grid;
+}
+div.contact ul {
+  max-width: 75%;
+  padding: 5%;
+  margin: 0 auto;
+  list-style-type: none;
+  text-align: left;
+}
+
+div.map_image picture {
+  max-height: 250px;
+  overflow: hidden;
+}
+div.map_image picture img {
+  width: 100%;
+}
+div.social_links {
+  width: 30px;
+}
+.currentDate {
+  display: block;
+  background-color: #8c862b;
+  margin: 0 auto;
+  padding: 0.5em;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
+/*-- Banner --*/
+.banner {
+  display: none;
+  background-color: #302d04;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+/* ---------- Fish Haven page ------------------*/
+/* ---------- Preston page ------------------*/
+.herodiv {
+  max-width: 100%;
+}
+.hero-photo-div img {
+  max-width: 100%;
+}
+.summary {
+  background: #8bbbd9;
+  padding: 1.5rem;
+}
+.fivedaysummary {
+  display: block;
+  text-align: center;
+  background-color: #d99848;
+  padding: 1em 0;
+  margin: 0.5em 0 0 0;
+}
+.fivedayimages {
+  display: none;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-flow: dense;
+  max-width: 100%;
+  background-color: #d99848;
+  margin: 1em 0;
+  padding: 1em;
+}
+.featureimage {
+  grid-row: 2;
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  padding: 1em;
+}
+section.feature img {
+  max-width: 100%;
+}
+
+.featurearticle {
+  grid-row: 1;
+}
+
+/* ---------- Soda Spring page ------------------*/
+/* ---------- Storm Center page ------------------*/
+main h1.storm {
+  text-align: center;
+}
+/* ---------- Storm Center Form ------------------*/
+form {
+  margin: 0 auto;
+  max-width: 25rem;
+}
+form fieldset {
+  margin: 0.5rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 1rem 2%;
+  background-color: white;
+  width: 100%;
+}
+
+form legend {
+  color: black;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: larger;
+  font-weight: bold;
+}
+
+form label.form1st,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+form label.form1st input,
+form label.form1st select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  max-width: 20rem;
+  background-color: rgb(0, 0, 0, 0.1);
+  -webkit-appearance: none;
+}
+
+form label.stormRating input {
+  display: block;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0 0.75rem;
+  color: #000;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.form1st input:required {
+  background-color: pink;
+}
+
+form label.form1st input:required:valid {
+  background-color: rgb(140, 134, 43);
+  color: white;
+}
+
+.stormRating {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.75rem 0;
+  color: #2075ff;
+}
+#ratingValue {
+  margin: 0 15px;
+}
+textarea {
+  width: 100%;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: black;
+}
+
+/* ---------- Gallery page ------------------*/
+/* First the Grid */
+.gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.2rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* The Picture Frame */
+.gallery-frame {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #333;
+  color: #d9d9d9;
+}
+
+/* The Images */
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.gallery-img:hover {
+  opacity: 0.7;
+}
+
+.headings h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  margin: 0 1em 0 0;
+}
+
+main h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: #d99848;
+}
+
+main ul {
+  background-color: #d99848;
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+.responsive li {
+  display: block;
+}
