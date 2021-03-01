@@ -85,7 +85,7 @@ div.contactInfo {
 div.item {
   display: grid;
   grid-column: 1/2;
-  align-items: left;
+  align-items: center;
   padding: 0.5rem;
   margin: 0.5rem;
 }
