@@ -65,44 +65,81 @@ nav {
 main {
   font-family: "Prompt", sans-serif;
   background-color: #8bbbd9;
-  margin: 0 auto 2rem auto;
+  margin: 1rem auto 2rem auto;
   padding: 1rem;
 }
+/*----- Home Page begin ------*/
+
+div.cards {
+  display: block;
+}
+div.cards section {
+  background-color: #d99848;
+  text-align: center;
+  margin: 1rem;
+}
+div.cards section section h2 {
+  font-weight: bold;
+  padding: 2rem 0 0 0;
+  margin: 0 0 0 0;
+}
+div.cards section section p {
+  font-weight: bold;
+}
+div.cards section section p:nth-child(2) {
+  font-style: italic;
+  margin: 0 0 2rem 0;
+}
+div.cards section section p:nth-child(5) {
+  margin: 0 0 2rem 0;
+}
+div.cards section figure {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/*-----------Home Page end ------------*/
 /* ---------- Footer ------------------*/
 footer {
-  background-color: #8bbbd9;
-  text-align: center;
-  margin: 0 auto;
-  padding: 1em;
-}
-div.contact {
-  display: grid;
-}
-div.contact ul {
-  max-width: 75%;
-  padding: 5%;
-  margin: 0 auto;
-  list-style-type: none;
-  text-align: left;
-}
-div.map_image picture {
-  max-height: 250px;
-  overflow: hidden;
-}
-div.map_image picture img {
-  width: 100%;
-}
-div.social_links {
-  width: 30px;
-}
-.currentDate {
   display: block;
-  background-color: #8c862b;
   margin: 0 auto;
   padding: 0.5em;
   text-align: center;
   font-family: "Cinzel", serif;
   font-weight: bold;
+}
+div.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  background-color: #8bbbd9;
+}
+.map_image {
+  display: none;
+}
+div.contactInfo {
+  display: grid;
+  grid-column: 1/2;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+div.item {
+  display: grid;
+  grid-column: 1/2;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.social_links {
+  display: block;
+  grid-column: 1/2;
+  padding: 1rem;
+  margin: 1rem;
+}
+div.currentDate {
+  background-color: #8c862b;
+  padding: 0.5rem;
+  margin: 0.5rem 0 0 0;
 }
 /*-- Banner --*/
 .banner {
@@ -135,7 +172,6 @@ div.social_links {
 .fivedayimages {
   display: none;
 }
-
 .feature {
   display: grid;
   grid-template-columns: 1fr;
@@ -279,7 +315,6 @@ textarea {
   margin: 0;
   padding: 0;
 }
-
 /* The Picture Frame */
 .gallery-frame {
   padding: 0.5rem;
@@ -288,7 +323,6 @@ textarea {
   background-color: #333;
   color: #d9d9d9;
 }
-
 /* The Images */
 .gallery-img {
   max-width: 100%;
@@ -296,30 +330,25 @@ textarea {
   object-fit: cover;
   transition: opacity 0.25s ease-in-out;
 }
-
 .gallery-img:hover {
   opacity: 0.7;
 }
-
 .headings h1 {
   font-family: "Cinzel", serif;
   font-size: 3.5rem;
   margin: 0 1em 0 0;
 }
-
 main h2 {
   font-family: "Cinzel", serif;
   font-size: 2.5rem;
   text-align: center;
   background-color: #d99848;
 }
-
 main ul {
   background-color: #d99848;
   list-style-type: none;
   line-height: 1.5;
 }
-
 .responsive li {
   display: block;
 }

@@ -43,52 +43,47 @@
             </ul>
         </nav>
     </header>
-
     <main>
-
+            <div class="cards"></div>
     </main>
-    <!-- end of page main section -->
-    <!-- Start of page footer-->
-    <footer id="contact">
-        <h2>Contact Information</h2>
+    <footer>
         <div class="contact">
-            <ul>
-                <li><i class="material-icons">email</i> Email: eee@eeee.eee</li>
-                <li><i class="material-icons">contact_phone</i> Phone: 555 555 1212</li>
-                <li><i class="material-icons">mail</i> Address: 123 Oak Dr Preston </li>
-            </ul>
-            <div class="map_image">
-                <picture>
-                    <source media="(max-width: 600px)" srcset="images/seidaho420.jpg">
-                    <source media="(max-width: 1200px)" srcset="images/seidaho280.jpg">
-                    <img src="images/seidaho500.jpg" alt="Preston area map">
-                </picture>
-            </div>
-            <div class="social_links">
-                <!--div class="social_images">-->
-                <figure class="social_image"><a href="https://facebook.com"><img src="images/fbs.png"
-                            alt="Facebook Link"></a>
-                </figure>
-                <figure class="social_image"><a href="https://youtube.com"><img src="images/youtubets.png"
-                            alt="YouTube Link"></a>
-                </figure>
-                <figure class="social_image"><a href="https://instagram"><img src="images/instagrams.png"
-                            alt="Instagram Link"></a>
-                </figure>
+            <picture class="map_image">
+                <source media="(max-width: 600px)" srcset="images/seidaho420.jpg">
+                <source media="(max-width: 1200px)" srcset="images/seidaho280.jpg">
+                <img src="images/seidaho500.jpg" alt="Preston area map" width="420" height="227">
+            </picture>
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="item">Email: eee@eeee.eee</div>
+                <div class="item">Phone: 555 555 1212</div>
+                <div class="item">Address: 123 Oak Dr Preston </div>
+                <div class="social_links">
+                    <!--div class="social_images">-->
+                    <a target="_blank" rel="noreferrer" href="https://facebook.com"><img src="images/fbs.png"
+                            alt="Facebook Link" width="30" height="30"></a>
+                    <a target="_blank" rel="noreferrer" href="https://youtube.com"><img src="images/youtubets.png"
+                            alt="YouTube Link" width="30" height="30"></a>
+                    <a target="_blank" rel="noreferrer" href="https://instagram"><img src="images/instagrams.png"
+                            alt="Instagram Link" width="30" height="30"></a>
+                </div>
             </div>
         </div>
+        <!-- Page last published date section-->
+        <div class="currentDate">
+            <p><span id="currentDate"></span></p>
+        </div>
     </footer>
-    <!-- End of page footer section -->
-    <!-- Page last published date section-->
-    <div class="currentDate">
-        <p><span id="currentDate"></span></p>
-    </div>
+    <!-- Script link section -->
     <script src="js/currentDate.js"></script>
     <script src="js/ham.js"></script>
     <!--<script src="js/banner.js"></script>
     <script src="js/windchill.js"></script> These scripts are not needed for this page -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webFontLoad.js"></script>
+    <!--<script src="js/lazy_load.js"></script>Not needed for this page-->
+    <!-- <script src="js/ratingValue.js"></script> Not needed for this page -->
+    <script src="js/towns.js"></script>
 </body>
 
 </html>
