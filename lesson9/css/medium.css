@@ -53,7 +53,14 @@
   div.cards section:nth-child(odd) {
     flex-direction: row-reverse;
   }
-
+  section.news h2 {
+    text-align: left;
+  }
+  section.news img {
+    float: right;
+    width: 300px;
+    margin: 0 0 15px 50px;
+  }
   /* Home Page end */
   /* Preston page begin */
   .herodiv {
