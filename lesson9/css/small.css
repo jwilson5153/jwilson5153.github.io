@@ -109,8 +109,15 @@ div.cards section section p:nth-child(5) {
 }
 div.cards section figure {
   width: 100%;
+  height: auto;
+
   padding: 0;
   margin: 0;
+}
+div.cards section figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 /*-----------Home Page end ------------*/
 /* ---------- Fish Haven page ------------------*/
@@ -348,9 +355,9 @@ div.currentDate {
 .banner {
   display: none;
   background-color: #302d04;
+  font-size: xx-large;
   color: white;
   text-align: center;
   margin: 0 auto;
   padding: 1em;
 }
-
