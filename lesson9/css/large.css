@@ -5,6 +5,10 @@
   header {
     max-width: 1440px;
   }
+  .logo-headings img {
+    width: 10rem;
+    margin-bottom: 0;
+  }
   header nav ul {
     max-width: 1200px;
   }

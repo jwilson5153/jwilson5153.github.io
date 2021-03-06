@@ -11,6 +11,10 @@
     justify-content: center;
     align-items: center;
   }
+  .logo-headings img {
+    width: 160px;
+    margin-right: 2rem;
+  }
   .headings {
     display: flex;
     flex-direction: column;
