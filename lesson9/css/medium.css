@@ -143,9 +143,11 @@
   picture.map_image img {
     width: 75%;
     height: 75%;
+    min-width: 300px;
     object-fit: contain;
   }
   div.contactInfo {
+    display: block;
     grid-column: 3/4;
   }
   div.contactInfo h3 {
