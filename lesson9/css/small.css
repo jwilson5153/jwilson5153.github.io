@@ -68,6 +68,20 @@ main {
   margin: 1rem auto 2rem auto;
   padding: 1rem;
 }
+main h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: #d99848;
+}
+main ul {
+  background-color: #d99848;
+  list-style-type: none;
+  line-height: 1.5;
+}
+.responsive li {
+  display: block;
+}
 /*----- Home Page begin ------*/
 
 div.cards {
@@ -99,57 +113,6 @@ div.cards section figure {
   margin: 0;
 }
 /*-----------Home Page end ------------*/
-/* ---------- Footer ------------------*/
-footer {
-  display: block;
-  margin: 0 auto;
-  padding: 0.5em;
-  text-align: center;
-  font-family: "Cinzel", serif;
-  font-weight: bold;
-}
-div.contact {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
-  background-color: #8bbbd9;
-}
-.map_image {
-  display: none;
-}
-div.contactInfo {
-  display: grid;
-  grid-column: 1/2;
-  padding: 0.5rem;
-  margin: 0.5rem;
-}
-div.item {
-  display: grid;
-  grid-column: 1/2;
-  align-items: center;
-  padding: 0.5rem;
-  margin: 0.5rem;
-}
-.social_links {
-  display: block;
-  grid-column: 1/2;
-  padding: 1rem;
-  margin: 1rem;
-}
-div.currentDate {
-  background-color: #8c862b;
-  padding: 0.5rem;
-  margin: 0.5rem 0 0 0;
-}
-/*-- Banner --*/
-.banner {
-  display: none;
-  background-color: #302d04;
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  padding: 1em;
-}
 /* ---------- Fish Haven page ------------------*/
 /* ---------- Preston page ------------------*/
 .herodiv {
@@ -179,7 +142,7 @@ div.currentDate {
   grid-auto-flow: dense;
   max-width: 100%;
   background-color: #d99848;
-  margin: 1em 0;
+  margin: 0 auto;
   padding: 1em;
 }
 .featureimage {
@@ -338,17 +301,56 @@ textarea {
   font-size: 3.5rem;
   margin: 0 1em 0 0;
 }
-main h2 {
-  font-family: "Cinzel", serif;
-  font-size: 2.5rem;
-  text-align: center;
-  background-color: #d99848;
-}
-main ul {
-  background-color: #d99848;
-  list-style-type: none;
-  line-height: 1.5;
-}
-.responsive li {
+
+/* ---------- Footer ------------------*/
+footer {
   display: block;
+  margin: 0 auto;
+  padding: 0.5em;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
 }
+div.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  background-color: #8bbbd9;
+}
+.map_image {
+  display: none;
+}
+div.contactInfo {
+  display: grid;
+  grid-column: 1/2;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+div.item {
+  display: grid;
+  grid-column: 1/2;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.social_links {
+  display: block;
+  grid-column: 1/2;
+  padding: 1rem;
+  margin: 1rem;
+}
+div.currentDate {
+  background-color: #8c862b;
+  padding: 0.5rem;
+  margin: 0.5rem 0 0 0;
+}
+/*-- Banner --*/
+.banner {
+  display: none;
+  background-color: #302d04;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+

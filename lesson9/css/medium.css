@@ -55,6 +55,7 @@
   }
 
   /* Home Page end */
+  /* Preston page begin */
   .herodiv {
     position: relative;
     margin: 10px auto;
@@ -90,7 +91,7 @@
     display: block;
     background-color: #d99848;
     padding: 1em;
-    margin: 0.5em 0 0 0;
+    margin: 0 auto 1rem auto;
     max-width: 800px;
   }
   .fivedayimages {
