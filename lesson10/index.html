@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jim Wilson">
+<meta name="description" content="This page is the week 2 assgnment for WDD 230-12.">
+<title>Telegraph Weather Site Preston Page</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Prompt&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div id="banner" class="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+        pavilion.
+    </div>
+    <!-- Beginning of page heading -->
+    <header>
+        <div class="logo-headings">
+            <picture><img src="images/logo.png" alt="Telegraph Weather logo"></picture>
+            <section class="headings">
+
+                <h1>Telegraph Weather</h1>
+                <div class="motto">Weather, News, and Helpful Info </div>
+
+            </section>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">🍔 Menu</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cards"></div>
+        <section class="news">
+            <img src="images/sodaspringsearthquake600s.jpg" alt="Soda Springs earthquake map">
+            <h2>Earthquake near Soda Springs</h2>
+            <p>January 2, 2021, a 4.2-magnitude earthquake struck near Soda Springs, Caribou County, Idaho, USA. The
+                tremor was recorded late at night on Saturday 2 January 2021 at 10:35 pm local time, at a very shallow
+                depth of 3.2 miles below the surface.</p>
+            <p> The event was filed by the United States Geological Survey (USGS), the first seismological agency to
+                report it.
+                Our monitoring service identified a second report from the European-Mediterranean Seismological Centre
+                (EMSC) which listed the quake at magnitude 4.2 as well.
+                Based on the preliminary seismic data, the quake was probably felt by many people in the area of the
+                epicenter. It should not have caused significant damage, other than objects falling from shelves, broken
+                windows, etc.
+                In Georgetown (pop. 470) located 7 miles from the epicenter, the quake should have been felt as light
+                shaking.</p>
+            <p>Weak shaking might have been felt in Soda Springs (pop. 2,900) located 10 miles from the epicenter,
+                Georgetown (pop. 190) 14 miles away, Soda Springs (pop. 900) 14 miles away, and Paris (pop. 510) 23
+                miles away.
+                Other towns or cities near the epicenter where the quake might have been felt as very weak shaking
+                include Preston (pop. 5,200) located 39 miles from the epicenter, Pocatello (pop. 54,400) 55 miles away,
+                and Logan (pop. 50,400) 60 miles away.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="contact">
+            <picture class="map_image">
+                <source media="(max-width: 600px)" srcset="images/seidaho420.jpg">
+                <source media="(max-width: 1200px)" srcset="images/seidaho280.jpg">
+                <img src="images/seidaho500.jpg" alt="Preston area map" width="420" height="227">
+            </picture>
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="item">Email: eee@eeee.eee</div>
+                <div class="item">Phone: 555 555 1212</div>
+                <div class="item">Address: 123 Oak Dr Preston </div>
+                <div class="social_links">
+                    <!--div class="social_images">-->
+                    <a target="_blank" rel="noreferrer" href="https://facebook.com"><img src="images/fbs.png"
+                            alt="Facebook Link" width="30" height="30"></a>
+                    <a target="_blank" rel="noreferrer" href="https://youtube.com"><img src="images/youtubets.png"
+                            alt="YouTube Link" width="30" height="30"></a>
+                    <a target="_blank" rel="noreferrer" href="https://instagram"><img src="images/instagrams.png"
+                            alt="Instagram Link" width="30" height="30"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Page last published date section-->
+        <div class="currentDate">
+            <p><span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <!-- End of page footer section -->
+    <!-- Script link section -->
+    <script src="js/currentDate.js"></script>
+    <script src="js/ham.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFontLoad.js"></script>
+    <script src="js/towns.js"></script>
+</body>
+
+</html>

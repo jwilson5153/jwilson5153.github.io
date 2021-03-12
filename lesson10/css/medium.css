@@ -1,0 +1,155 @@
+@media only screen and (min-width: 600px) {
+  /* ---------- Body ------------------*/
+
+  /* ---------- Header ------------------*/
+  header {
+    display: block;
+    max-width: 1200px;
+  }
+  .logo-headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-headings img {
+    width: 160px;
+    margin-right: 2rem;
+  }
+  .headings {
+    display: flex;
+    flex-direction: column;
+  }
+  /* ---------- Navigation ------------------*/
+  nav {
+    max-width: 100%;
+  }
+  header nav ul {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  /* ---------- Main ------------------*/
+  main {
+    max-width: 800px;
+  }
+  /* Home Page begin */
+  div.cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.cards section {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0 0.5rem 0;
+    width: 100%;
+  }
+  div.cards section section {
+    display: block;
+    width: 40%;
+    margin: 1rem;
+  }
+  div.cards section figure {
+    display: block;
+  }
+  div.cards section figure img {
+    margin: 2rem 1rem 1rem 1rem;
+    width: 80%;
+  }
+  div.cards section:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  section.news h2 {
+    text-align: left;
+  }
+  section.news img {
+    float: right;
+    width: 300px;
+    margin: 0 0 15px 50px;
+  }
+  /* Home Page end */
+  /* Preston page begin */
+  .herodiv {
+    position: relative;
+    margin: 10px auto;
+    max-width: 100%;
+    max-width: 800px;
+  }
+  .hero-photo-div {
+    margin: 10px auto;
+    max-width: 100%;
+  }
+  .summary {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    background: radial-gradient(#eee, #8bbbd9);
+    box-shadow: 0 0 30px #111;
+    opacity: 0.8;
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    font-size: small;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+   section.summary img {
+    width: 5rem;
+  }
+
+  div.fivedayimages {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .feature {
+    display: block;
+    max-width: 800px;
+  }
+  .featureimage {
+    margin: 3em 0 0 0;
+    padding-left: 1em;
+    float: right;
+  }
+  /* --------- Contact Info end ---------*/
+  /* ------  Footer begin ----------- */
+  footer {
+    max-width: 1200px;
+  }
+  div.contact {
+    grid-template-columns: 100px 1fr 1fr;
+    gap: 10px;
+    text-align: left;
+  }
+  .map_image {
+    display: flex;
+    grid-column: 2/3;
+    align-self: center;
+  }
+  picture.map_image img {
+    width: 75%;
+    height: 75%;
+    min-width: 300px;
+    object-fit: contain;
+  }
+  div.contactInfo {
+    display: block;
+    grid-column: 3/4;
+  }
+  div.contactInfo h3 {
+    grid-column: 3/4;
+  }
+  div.item {
+    grid-column: 3/4;
+  }
+  .social_links {
+    grid-column: 3/4;
+  }
+  /* ------  Footer end ----------- */
+}
