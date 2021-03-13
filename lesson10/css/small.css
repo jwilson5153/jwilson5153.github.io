@@ -169,8 +169,6 @@ div.day, div.temp {
   background-color: #8c862b;
   padding: .5rem;
 }
-
-
 .feature {
   display: grid;
   grid-template-columns: 1fr;
@@ -198,8 +196,9 @@ section.feature img {
 
 /* ---------- Soda Spring page ------------------*/
 /* ---------- Storm Center page ------------------*/
-main h1.storm {
+main h2.storm {
   text-align: center;
+  padding: .5rem;
 }
 /* ---------- Storm Center Form ------------------*/
 form {
@@ -208,7 +207,7 @@ form {
 }
 form fieldset {
   margin: 0.5rem 0;
-  border: 1px solid #445ba9;
+  border: 3px solid #445ba9;
   border-radius: 10px;
   padding: 1rem 2%;
   background-color: white;
