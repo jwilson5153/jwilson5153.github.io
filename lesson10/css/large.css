@@ -27,6 +27,7 @@
     background-color: #d99848;
     text-align: center;
     width: 100%;
+    align-content: space-between;
   }
   div.cards section section {
     width: 100%;
@@ -49,7 +50,7 @@
     margin: 0 0 2rem 0;
   }
   div.cards section figure {
-    width: 100%;
+      width: 100%;
     padding: 0;
     margin: 0;
   }
