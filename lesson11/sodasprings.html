@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jim Wilson">
+<meta name="description" content="This page is the week 10 assgnment for WDD 230-12.">
+<title>Telegraph Weather Site Soda Springs Page</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Prompt&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div id="banner" class="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+        pavilion.
+    </div>
+    <!-- Beginning of page heading -->
+    <header>
+        <div class="logo-headings">
+            <picture><img src="images/logo.png" alt="Telegraph Weather logo"></picture>
+            <section class="headings">
+
+                <h1>Telegraph Weather</h1>
+                <div class="motto">Weather, News, and Helpful Info </div>
+
+            </section>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">🍔 Menu</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#" class="active">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Soda Springs Idaho</h2>
+          </main>
+    <!-- end of page main section -->
+    <!-- Start of page footer-->
+    <footer>
+        <div class="contact">
+            <picture class="map_image">
+                <source media="(max-width: 600px)" srcset="images/seidaho420.jpg">
+                <source media="(max-width: 1200px)" srcset="images/seidaho280.jpg">
+                <img src="images/seidaho500.jpg" alt="Preston area map" width="420" height="227">
+            </picture>
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="item">Email: eee@eeee.eee</div>
+                <div class="item">Phone: 555 555 1212</div>
+                <div class="item">Address: 123 Oak Dr Preston </div>
+                <div class="social_links">
+                    <!--div class="social_images">-->
+                    <a target="_blank" rel="noreferrer" href="https://facebook.com"><img src="images/fbs.png"
+                            alt="Facebook Link" width="30" height="30"></a>
+                    <a target="_blank" rel="noreferrer" href="https://youtube.com"><img src="images/youtubets.png"
+                            alt="YouTube Link" width="30" height="30"></a>
+                    <a target="_blank" rel="noreferrer" href="https://instagram"><img src="images/instagrams.png"
+                            alt="Instagram Link" width="30" height="30"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Page last published date section-->
+        <div class="currentDate">
+            <p><span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <!-- End of page footer section -->
+    <!-- Script link section -->
+    <script src="js/currentDate.js"></script>
+    <script src="js/ham.js"></script>
+    <script src="js/banner.js"></script>
+    <!--<script src="js/windchill.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFontLoad.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/forcast.js"></script>
+</body>
+
+</html>
