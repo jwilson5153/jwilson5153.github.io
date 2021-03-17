@@ -64,8 +64,14 @@
   }
   /*----- Home Page ends ----- */
   /* ----- Preston Page begins ----- */
+  .herodiv {
+    max-width: 1200px; 
+  }
   section.summary img {
     width: 3rem;
+  }
+  .feature {
+    max-width: 1200px;
   }
   /* ----- Preston Page ends ----- */
   /* ----- Footer begins ----- */
