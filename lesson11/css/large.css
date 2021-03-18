@@ -67,6 +67,10 @@
   .herodiv {
     max-width: 1200px; 
   }
+  section.summary {
+    font-size: medium;
+    line-height: 1;
+  }
   section.summary img {
     width: 3rem;
   }

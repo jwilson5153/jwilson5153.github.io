@@ -139,7 +139,8 @@ section.news img {
 }
 section.summary {
   text-align: center;
-  font-weight: bold;
+  font-size: smaller;
+  line-height: .5;
   background: #8bbbd9;
   padding: 0 1.5rem;
   height: auto;

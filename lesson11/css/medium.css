@@ -98,7 +98,8 @@
   .navigation li:first-child {
     display: none;
   }
-   section.summary img {
+
+  section.summary img {
     width: 5rem;
   }
 
