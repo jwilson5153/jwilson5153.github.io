@@ -3,8 +3,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jim Wilson">
-<meta name="description" content="This page is the week 2 assgnment for WDD 230-12.">
-<title>Telegraph Weather Site Preston Page</title>
+<meta name="description" content="This page is the home page for the Telegraph Weather site.">
+<title>Telegraph Weather Site Home Page</title>
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,9 +16,7 @@
 </head>
 
 <body>
-    <div id="banner" class="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
-        pavilion.
-    </div>
+
     <!-- Beginning of page heading -->
     <header>
         <div class="logo-headings">
@@ -45,26 +43,54 @@
     <main>
         <div class="cards"></div>
         <section class="news">
-            <img src="images/sodaspringsearthquake600s.jpg" alt="Soda Springs earthquake map">
-            <h2>Earthquake near Soda Springs</h2>
-            <p>January 2, 2021, a 4.2-magnitude earthquake struck near Soda Springs, Caribou County, Idaho, USA. The
-                tremor was recorded late at night on Saturday 2 January 2021 at 10:35 pm local time, at a very shallow
-                depth of 3.2 miles below the surface.</p>
-            <p> The event was filed by the United States Geological Survey (USGS), the first seismological agency to
-                report it.
-                Our monitoring service identified a second report from the European-Mediterranean Seismological Centre
-                (EMSC) which listed the quake at magnitude 4.2 as well.
-                Based on the preliminary seismic data, the quake was probably felt by many people in the area of the
-                epicenter. It should not have caused significant damage, other than objects falling from shelves, broken
-                windows, etc.
-                In Georgetown (pop. 470) located 7 miles from the epicenter, the quake should have been felt as light
-                shaking.</p>
-            <p>Weak shaking might have been felt in Soda Springs (pop. 2,900) located 10 miles from the epicenter,
-                Georgetown (pop. 190) 14 miles away, Soda Springs (pop. 900) 14 miles away, and Paris (pop. 510) 23
-                miles away.
-                Other towns or cities near the epicenter where the quake might have been felt as very weak shaking
-                include Preston (pop. 5,200) located 39 miles from the epicenter, Pocatello (pop. 54,400) 55 miles away,
-                and Logan (pop. 50,400) 60 miles away.</p>
+            <picture class="featureimage">
+                <source media="(max-width: 600px)" srcset="images/eastidahoweather600.jpg">
+                <source media="(max-width: 960px)" srcset="images/eastidahoweather300.jpg">
+                <img src="images/eastidahoweather600.jpg" alt="East Idaho Weather">
+            </picture>
+            <h2>WINTER STORM WARNING: East Idaho in the crosshairs of big multi-day storm</h2>
+            <p>The National Weather Service has escalated its winter storm watches to winter storm warnings in
+                anticipation of a powerful multi-day snowstorm that's forecast to hit East Idaho starting late Tuesday
+                night.</p>
+            <p> Winter weather advisories have also been issued for East Idaho urging motorists in the region to drive
+                carefully because of the expected hazardous road conditions caused by the storm.</p>
+            <p>The snow is expected to start falling on East Idaho late Tuesday night and to continue through Friday
+                evening, the weather service said.</p>
+            <p>The weather service is telling motorists that if they must travel in East Idaho during the storm to make
+            sure they have "an extra flashlight, food and water" in their vehicles "in case of an emergency."</p>
+
+            <p>In addition to dumping several inches of snow on much of the region, the storm is forecast to bring winds
+                of up to 35 mph to East Idaho, massively decreasing visibility and causing the "overwhelming drifting of
+                snow," the weather service said. Temporary road closures are possible in East Idaho because of the
+                snowstorm.</p>
+
+            <p>The areas forecast to receive the most snow — up to a foot — are Spencer, Arco, Craters of the Moon,
+                Island Park, Ashton and Victor. The weather service said it’s even possible that the higher mountains in
+                those areas could receive up to 18 inches of snow depending on the storm’s </p>ferocity.
+
+            <p>Up to 10 inches of snow could fall on the Driggs, Tetonia, Emigration Summit, Swan Valley, Palisades and
+                Wayan areas, while up to 5 to 7 inches of snow could fall on the Atomic City, Idaho National Laboratory,
+                Dubois, Mud Lake, St. Anthony, Bone, Henry, Ririe, Arbon, Holbrook, Malad, Downey, Swanlake, McCammon,
+                Arimo, Thatcher, Lava Hot Springs, Montpelier, Georgetown, Soda Springs and Grace areas. </p>
+
+            <p>Up to 3 inches of snow could fall on the Preston, Idaho Falls, Ammon, Rigby, Rexburg, Sugar City,
+                Rockland, Bancroft, St. Charles, Paris and Inkom areas. </p>
+
+            <p>The Pocatello, Chubbuck, Malta, Burley, Rupert, Raft River, American Falls, Aberdeen, Fort Hall,
+                Blackfoot, Firth and Shelley areas are forecast to receive the least amount of snow — an inch at the
+                most.</p>
+
+            <p>Rain will likely be mixed in with the snow at times during the storm, especially in East Idaho’s lower
+                elevations.</p>
+
+            <p>Elsewhere in the state, winter storm warnings and winter weather advisories calling for a foot or more of
+                snow have been issued for the central Idaho mountains including the Stanley, Hailey, Sun Valley, Ketchum
+                and Mackay areas.</p>
+
+            <p>Winter storm warnings and winter weather advisories calling for snow are also in effect in parts of
+                southwest and northern Idaho as well as in Washington, Oregon and Nevada.</p>
+
+            <p>Hazardous weather alerts regarding the storm have been issued in Utah and Wyoming.</p>
         </section>
     </main>
     <footer>
@@ -92,7 +118,7 @@
         </div>
         <!-- Page last published date section-->
         <div class="currentDate">
-            <p>&#169 2021 Ignite Digital Marketing | James Edward Wilson | <a href="https:buyi.edu">Terms of Use</a></p>
+            <p>&#169; 2021 Ignite Digital Marketing | James Edward Wilson | <a href="https://0buyi.edu">Terms of Use</a></p>
             <p>Today's Date: <span id="currentDate"></span> </p>
         </div>
     </footer>
@@ -100,7 +126,6 @@
     <!-- Script link section -->
     <script src="js/currentDate.js"></script>
     <script src="js/ham.js"></script>
-    <script src="js/banner.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webFontLoad.js"></script>
     <script src="js/towns.js"></script>

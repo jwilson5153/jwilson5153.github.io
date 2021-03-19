@@ -76,6 +76,7 @@ main h2 {
   font-family: serif;
   font-size: 7vw;
   text-align: center;
+  padding: 1vw;
   background-color: #d99848;
 }
 main ul {
@@ -208,9 +209,10 @@ div.events p:nth-child(4) {
   object-fit: cover;
   max-width: 100%;
   padding: 1em;
-}
+  }
 section.feature img {
   max-width: 100%;
+  box-shadow: 0 0 10px rgb(0 0 0);
 }
 
 .featurearticle {
@@ -422,7 +424,7 @@ textarea {
   padding: 0;
 }
 /* The Picture Frame */
-.gallery-frame {
+div.gallery-grid div {
   padding: 0.5rem;
   font-size: 3vw;
   text-align: center;
@@ -491,7 +493,7 @@ div.currentDate {
 .banner {
   display: none;
   background-color: #302d04;
-  font-size: 5vw;
+  font-size: 2.5vw;
   color: white;
   text-align: center;
   margin: 0 auto;

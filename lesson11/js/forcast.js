@@ -4,8 +4,8 @@ if (document.getElementById("preston")){
     cityID = 5604473;
   }
   else if (document.getElementById("sodasprings")){
-    fcityID = 5678757;
-    cityID = 5678757;
+    fcityID = 5607916;
+    cityID = 5607916;
   }
   else if (document.getElementById("fishhaven")){
     fcityID = 5677822;
