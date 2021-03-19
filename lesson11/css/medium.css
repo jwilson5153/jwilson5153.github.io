@@ -1,5 +1,8 @@
 @media only screen and (min-width: 600px) {
   /* ---------- Body ------------------*/
+  p {
+    font-size: 1.5vw;
+  }
 
   /* ---------- Header ------------------*/
   header {
@@ -12,12 +15,18 @@
     align-items: center;
   }
   .logo-headings img {
-    width: 160px;
-    margin-right: 2rem;
+    width: 15vw;
+    margin-right: 1vw;
   }
   .headings {
     display: flex;
     flex-direction: column;
+  }
+  .headings h1 {
+    font-size: 7vw;
+  }
+  .motto {
+    font-size: 2vw;
   }
   /* ---------- Navigation ------------------*/
   nav {
@@ -30,6 +39,9 @@
   /* ---------- Main ------------------*/
   main {
     max-width: 800px;
+  }
+  main h2 {
+    font-size: 4vw;
   }
   /* Home Page begin */
   div.cards {
@@ -93,7 +105,7 @@
     flex: 1 1 auto;
   }
   .navigation a {
-    font-size: small;
+    font-size: 2vw;
   }
   .navigation li:first-child {
     display: none;
@@ -102,13 +114,33 @@
   section.summary img {
     width: 5rem;
   }
-
+  section.fivedaysummary {
+    display: block;
+  }
   div.fivedayimages {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
-    text-align: left;
   }
-
+  div.fivedayimages p {
+    font-size: 2vw;
+  }
+  div.fiveday img {
+    width: 10vw;
+  }
+  div.fiveday {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  div.events {
+    padding: 0 0 2rem 0;
+  }
+  div.events p:nth-child(4) {
+    padding-bottom: 0;
+  }
   .feature {
     display: block;
     max-width: 800px;
@@ -118,7 +150,19 @@
     padding-left: 1em;
     float: right;
   }
-  /* --------- Contact Info end ---------*/
+  form {
+    width: 50%;
+  }
+  form legend {
+    font-size: 2.5vw;
+  }
+  form label.form1st,
+  form div {
+    font-size: 1.5vw;
+  }
+  .gallery-frame {
+    font-size: 2vw;
+  }
   /* ------  Footer begin ----------- */
   footer {
     max-width: 1200px;

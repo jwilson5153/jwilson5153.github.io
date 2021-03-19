@@ -12,7 +12,9 @@ html {
 }
 
 /* ---------- Body ------------------*/
-
+p {
+  font-size: 3vw;
+}
 /* ---------- Header ------------------*/
 header {
   background-color: #8bbbd9;
@@ -23,14 +25,15 @@ header {
 }
 .logo-headings img {
   height: auto;
-  width: 60px;
+  width: 10vw;
+  padding: 2vw;
 }
 .motto {
   font-family: "Prompt", sans-serif;
   letter-spacing: 1pt;
   margin-left: 1em;
   padding-bottom: 1em;
-  font-size: 0.9rem;
+  font-size: 3vw;
 }
 /* ---------- Navigation ------------------*/
 nav {
@@ -70,8 +73,8 @@ main {
   padding: 1rem;
 }
 main h2 {
-  font-family: "Cinzel", serif;
-  font-size: 2.5rem;
+  font-family: serif;
+  font-size: 7vw;
   text-align: center;
   background-color: #d99848;
 }
@@ -111,7 +114,6 @@ div.cards section section p:nth-child(5) {
 div.cards section figure {
   width: 100%;
   height: auto;
-
   padding: 0;
   margin: 0;
 }
@@ -139,22 +141,26 @@ section.news img {
 }
 section.summary {
   text-align: center;
-  font-size: smaller;
-  line-height: .5;
+  font-size: 2vw;
+  line-height: 0.5;
   background: #8bbbd9;
   padding: 0 1.5rem;
   height: auto;
 }
 section.summary img {
-  width: 10rem;
+  width: 15vw;
 }
 section.fivedaysummary h3 {
   text-align: center;
   padding: 1rem;
-  margin: .5rem 0 1rem 0;
+  margin: 0.5rem 0 1rem 0;
+}
+div.fivedayimages {
+  margin: 0 auto;
+  width: 50%;
 }
 div.fivedayimages p {
-  font-weight: bold;
+  font-size: 4vw;
 }
 div.fiveday {
   display: block;
@@ -164,11 +170,27 @@ div.fiveday {
   margin: 0.5rem;
 }
 div.fiveday img {
-  width: 7rem;
+  width: 15vw;
 }
-div.day, div.temp {
+div.day,
+div.temp {
   background-color: #8c862b;
-  padding: .5rem;
+  padding: 0.5rem;
+}
+div.events {
+  display: block;
+  background-color: #999;
+  width: 35vw;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+div.events p {
+  font-size: larger;
+  padding: 0 2rem;
+}
+div.events p:nth-child(4) {
+  padding-bottom: 2rem;
 }
 .feature {
   display: grid;
@@ -199,19 +221,19 @@ section.feature img {
 /* ---------- Storm Center page ------------------*/
 main h2.storm {
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 /* ---------- Storm Center Form ------------------*/
 form {
   margin: 0 auto;
-  max-width: 25rem;
+  width: 50%;
 }
 form fieldset {
   margin: 0.5rem 0;
   border: 3px solid #445ba9;
   border-radius: 10px;
   padding: 1rem 2%;
-  background-color: white;
+  background-color: #8c862b;
   width: 100%;
 }
 
@@ -219,7 +241,7 @@ form legend {
   color: black;
   margin: 0 1rem;
   padding: 0 0.5rem;
-  font-size: larger;
+  font-size: 3vw;
   font-weight: bold;
 }
 
@@ -228,23 +250,23 @@ form div {
   display: block;
   padding-top: 1rem;
   color: black;
-  font-size: 0.8rem;
+  font-size: 2vw;
   font-weight: bold;
 }
 form label.form1st input,
 form label.form1st select {
   display: block;
-  font-size: 1rem;
+  font-size: 2vw;
   border: solid 1px #999;
   border-radius: 4px;
   padding: 0.75rem;
-  max-width: 20rem;
-  background-color: rgb(0, 0, 0, 0.1);
+  width: 90%;
   -webkit-appearance: none;
 }
 
 form label.stormRating input {
   display: block;
+  margin: 0 auto;
 }
 
 form label.sbs {
@@ -272,16 +294,101 @@ form label.form1st input:required:valid {
   background-color: rgb(140, 134, 43);
   color: white;
 }
-
 .stormRating {
   display: flex;
   align-items: center;
   padding: 0.5rem;
   margin: 0.75rem 0;
-  color: #2075ff;
+  color: white;
 }
 #ratingValue {
   margin: 0 15px;
+}
+input[type="range"] {
+  height: 46px;
+  -webkit-appearance: button;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: progress;
+  box-shadow: 1px 1px 1px #000000;
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 25px;
+  width: 5px;
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000;
+  background: black;
+  border-radius: 15px;
+  border: 1px solid #000000;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 25px;
+  width: 5px;
+  border-radius: 12px;
+  background: black;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 25px;
+  width: 5px;
+  border-radius: 12px;
+  background: #101285;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #ffffff;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #ffffff;
 }
 textarea {
   width: 100%;
@@ -317,7 +424,7 @@ textarea {
 /* The Picture Frame */
 .gallery-frame {
   padding: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 3vw;
   text-align: center;
   background-color: #333;
   color: #d9d9d9;
@@ -333,8 +440,8 @@ textarea {
   opacity: 0.7;
 }
 .headings h1 {
-  font-family: "Cinzel", serif;
-  font-size: 3.5rem;
+  font-family: serif;
+  font-size: 10vw;
   margin: 0 1em 0 0;
 }
 
@@ -344,7 +451,7 @@ footer {
   margin: 0 auto;
   padding: 0.5em;
   text-align: center;
-  font-family: "Cinzel", serif;
+  font-family: serif;
   font-weight: bold;
 }
 div.contact {
@@ -384,7 +491,7 @@ div.currentDate {
 .banner {
   display: none;
   background-color: #302d04;
-  font-size: xx-large;
+  font-size: 5vw;
   color: white;
   text-align: center;
   margin: 0 auto;

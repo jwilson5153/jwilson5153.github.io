@@ -1,20 +1,25 @@
 @media only screen and (min-width: 1200px) {
+  p {
+    font-size: 1vw;
+  }
   .navigation a {
     font-size: larger;
   }
   header {
     max-width: 1440px;
   }
-  .logo-headings img {
-    width: 10rem;
-    margin-bottom: 0;
-  }
   header nav ul {
     max-width: 1200px;
+  }
+  .navigation a {
+    font-size: 2.2vw;
   }
   main {
     max-width: 1200px;
     padding: 1rem;
+  }
+  main h2 {
+    font-size: 3vw;
   }
   /*----- Home Page begins -----*/
   div.cards {
@@ -50,7 +55,7 @@
     margin: 0 0 2rem 0;
   }
   div.cards section figure {
-      width: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -65,8 +70,12 @@
   /*----- Home Page ends ----- */
   /* ----- Preston Page begins ----- */
   .herodiv {
-    max-width: 1200px; 
+    max-width: 1200px;
   }
+  section.fivedaysummary {
+    width: 1200px;
+  }
+
   section.summary {
     font-size: medium;
     line-height: 1;
@@ -78,6 +87,19 @@
     max-width: 1200px;
   }
   /* ----- Preston Page ends ----- */
+  form {
+    width: 30vw;
+  }
+  form legend {
+    font-size: 1.5vw;
+  }
+  form label.form1st,
+  form div {
+    font-size: 1vw;
+  }
+  .gallery-frame {
+    font-size: 1.5vw;
+  }
   /* ----- Footer begins ----- */
   footer {
     max-width: 1440px;

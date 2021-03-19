@@ -2,6 +2,7 @@ const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 fetch(requestURL)
     .then(function (response) {
         return response.json();
+
     })
     .then(function (jsonObject) {
         const towns = jsonObject['towns'];
@@ -16,6 +17,7 @@ fetch(requestURL)
             const townavgrainfall = document.createElement("p");
             const image = document.createElement("img");
             const cards = document.querySelector(".cards");
+            
             if (`${sitetown.name}` == 'Fish Haven' || `${sitetown.name}` == 'Preston' || `${sitetown.name}` == 'Soda Springs') {
                 townname.innerHTML = `${sitetown.name}`;
                 townmotto.innerHTML = `${sitetown.motto}`;
@@ -26,7 +28,7 @@ fetch(requestURL)
                 image.setAttribute("alt", `${sitetown.name}` + ' Beauty')
                 timage.append(image);
 
-
+               
 
                 data.append(townname);
                 data.append(townmotto);
@@ -37,7 +39,10 @@ fetch(requestURL)
                 card.append(timage)
                 cards.append(card);
 
+               
             }
         })
 
     });
+
+    
