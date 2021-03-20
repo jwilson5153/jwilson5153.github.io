@@ -100,7 +100,10 @@
   form div {
     font-size: 1vw;
   }
-  div.gallery-grid fiv {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  div.gallery-grid div {
     font-size: 1.5vw;
   }
   /* ----- Footer begins ----- */

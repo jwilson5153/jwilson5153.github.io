@@ -160,6 +160,9 @@
   form div {
     font-size: 1.5vw;
   }
+  .gallery-grid {
+     grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
   div.gallery-grid div {
     font-size: 2vw;
   }
