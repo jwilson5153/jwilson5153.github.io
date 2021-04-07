@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jim Wilson">
+    <meta name="description" content="Benefits of joining the local chamber of commerce and a signup form.">
+    <title>Chamber of Commerce Membership benefits and signup</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+
+    <header>
+        <div id="header_banner">
+            <div id="removealerts">
+                <div id="alerts"></div><button onclick="">
+                    <span onclick="alertsOff()">Remove Alerts</span>
+                </button>
+            </div>
+        </div>
+        <div id="page_header">
+            <nav>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="city.html">Bolivar</a></li>
+                        <li><a href="#" class="active">Membership</a></li>
+                        <li><a href="directory.html">Business Directory</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="chamber_logo"><img src="images/logo.svg" alt="Chamber Logo" width="100" height="100"></div>
+            <div id="top_heading">
+                <h1>Bolivar Area Chamber of Commerce</h1>
+            </div>
+            <div id="motto">
+                <p>A place to call home</p>
+            </div>
+            <div id="current_weather">
+                <p><a><span id="temperature"></span>&deg; F |</a>
+                    <a><span id="humidity"></span>&percnt; Humidity |</a>
+                    <a><span id="description"></span></a>
+                    <a><span id="imagesrc"></span><img src="" alt="weather icon" id="icon"></a>
+                </p>
+            </div>
+            <div id="social_icons">
+                <a href="https://facebook.com/bolivarchamber/"><img src="images/facebook.png" alt="Link to Facebook"
+                        width="30" height="30"></a>
+                <a href="https://instagram.com/bolivar_chamber/"><img src="images/instagram.png" alt="Link to Instagram"
+                        width="30" height="30"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="joinChamber">
+            <div id="joinChamberBenefits">
+                <h2>Benefits of Joining the Chamber</h2>
+                <p>-Network with other businesses and community</p>
+                <p>-Gain a voice in the local business community</p>
+                <p>-Increase business contacts</p>
+                <p>-Share information about your business with potential customers</p>
+                <p>-Acquire customer referrals</p>
+                <p>-Expand your prospect base through chamber events
+                <p>-Add credibility to your business</p>
+                <p>-Increase your visibility in the community</p>
+                <div>
+                    <h2>Membership Levels</h2>
+                    <p><strong>Non-profit ($100)</strong><br> Promotion assistance during annual donation drives</p>
+                    <p><strong>Bronze ($200)</strong><br> 1 free monthly luncheon ticket</p>
+                    <p><strong>Silver ($400)</strong><br> Quarter page display ad in monthly newsletter, 1 free monthly
+                        luncheon ticket</p>
+                    <p><strong>Gold ($1000)</strong><br> Full page display ad in monthly newsletter, Automatic
+                        enrollment in sponsered
+                        training
+                        classes, 2 free monthly luncheon tickets</p>
+                </div>
+            </div>
+            <div id="joinChamberForm">
+                <form method="get" action="thanks.html">
+                    <h2>Membership Signup Form</h2>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label class="form1st">First Name *<input type="text" name="firstname"
+                                pattern="[A-Za-z \s]{1,40}" required placeholder="John"></label>
+                        <label class="form1st">Last Name *<input type="text" name="lastname" pattern="[A-Za-z \s]{1,40}"
+                                required placeholder="Doe"></label>
+                        <label class="form1st">Email *<input type="email" name="email" required
+                                placeholder="yourID@Your_mail.com"></label>
+                        <label class="form1st">Phone *<input type="tel" name="phone" placeholder="5555551234"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label class="form1st">Business Name *<input type="text" name="business_name" required
+                                placeholder="Acme"></label>
+                        <label class="form1st">Business Address<input type="text" name="business_address"
+                                placeholder="123 Main St"></label>
+                        <label class="form1st">Business Website<input type="url" name="business_website"
+                                placeholder="company.com"></label>
+                        <label class="form1st">Business Description<input type="text"
+                                name="business_description"></label>
+                    </fieldset>
+                    <fieldset id="memberLevel">
+                        <legend>Membership Level</legend>
+                        <input class="form1st" type="radio" id="Non-profit($100)" name="membership"
+                            value="Non-profit($100)">
+                        <label class="form1st" for="Non-profit($100)">Non-profit ($100) </label><br>
+                        <input class="form1st" type="radio" id="Bronze($200)" name="membership" value="Bronze($200)">
+                        <label class="form1st" for="Bronze($200)">Bronze ($200)</label><br>
+                        <input class="form1st" type="radio" id="Silver($400)" name="membership" value="Silver($400)">
+                        <label class="form1st" for="Silver($400)">Silver ($400)</label><br>
+                        <input class="form1st" type="radio" id="Gold($1000)" name="membership" value="Gold($1000)">
+                        <label class="form1st" for="Gold($1000)">Gold ($1000)</label><br>
+                    </fieldset>
+                    <input type="submit" value="Membership Request" class="submmitBtn">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot_content">
+            <div class="adCards">
+                <h3>Advertisements</h3>
+                <div class="adCards_co div_scroll">
+                </div>
+            </div>
+            <div class="dirCards">
+                <h3>Directory</h3>
+                <div class="dirCards_co div_scroll">
+                </div>
+            </div>
+            <div class="econDev">
+                <h3>Economic Development</h3>
+                <p><iframe width="300" height="200" src="https://www.youtube.com/embed/CeP6MAk_4Hs"
+                        title="Bolivar Economic Development video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>117A S Main Ave, Bolivar, MO 65613</p>
+                <p>Phone:417-326-4118</p>
+
+                <p>Email: info@bolivarchamber.com</p>
+            </div>
+        </div>
+        <div class="currentDate">
+            <p>&#169; 2021 Ignite Digital Marketing | James Edward Wilson
+            </p>
+            <p>Last modified date: <span id="lastModifiedDate"></span> </p>
+        </div>
+
+    </footer>
+    <script src="js/bolivarcc.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+</body>
+
+</html>

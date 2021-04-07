@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jim Wilson">
+    <meta name="description"
+        content="Promote the business interests of the Bolivar Missouri Chamber of Commerce members and Bolivar area to attract additional businesses and people.  Act as an welcome center, tourism information center, and local information center or current, new, and potential businesses and residents, as well as visitors.">
+    <title>Bolivar Missouri Chanber of Commerce</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+
+    <header>
+        <div id="header_banner">
+            <div id="removealerts">
+                <div id="alerts"></div><button onclick="">
+                    <span onclick="alertsOff()">Remove Alerts</span>
+                </button>
+            </div>
+        </div>
+        <div id="page_header">
+            <nav>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="city.html">Bolivar</a></li>
+                        <li><a href="join.html">Membership</a></li>
+                        <li><a href="directory.html">Business Directory</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="chamber_logo"><img src="images/logo.svg" alt="Chamber Logo" width="100" height="100"></div>
+            <div id="top_heading">
+                <h1>Bolivar Area Chamber of Commerce</h1>
+            </div>
+            <div id="motto">
+                <p>A place to call home</p>
+            </div>
+            <div id="current_weather">
+                <p><a><span id="temperature"></span>&deg; F |</a>
+                    <a><span id="humidity"></span>&percnt; Humidity |</a>
+                    <a><span id="description"></span></a>
+                    <a><span id="imagesrc"></span><img src="" alt="weather icon" id="icon"></a>
+                </p>
+            </div>
+            <div id="social_icons">
+                <a href="https://facebook.com/bolivarchamber/"><img src="images/facebook.png" alt="Link to Facebook"
+                        width="30" height="30"></a>
+                <a href="https://instagram.com/bolivar_chamber/"><img src="images/instagram.png" alt="Link to Instagram"
+                        width="30" height="30"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="event_weather">
+            <h2 id="event_heading">Upcoming Events</h2>
+            <div class="eventCards">
+            </div>
+            <div id="forecast">
+                <h2 id="forecast_heading">3 Day Forecast</h2>
+                <div>
+                    <p> <span id="fDay1"></span></p>
+                </div>
+                <div>
+                    <p>Temperature: <span id="fTemperature1"></span>&deg; F</p>
+                </div>
+                <div>
+                    <p> <span id="fDay2"></span></p>
+                </div>
+                <div>
+                    <p>Temperature: <span id="fTemperature2"></span>&deg; F</p>
+                </div>
+                <div>
+                    <p> <span id="fDay3"></span></p>
+                </div>
+                <div>
+                    <p>Temperature: <span id="fTemperature3"></span>&deg; F</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="feature">
+                <h2>Bolivar Chamber of Commerce Purposes and Goals</h2>
+                <p class="para_heading">Purposes</p>
+                <p>The Bolivar Area Chamber of Commerce, now in its 106th year of service, helps support and grow local
+                    business through education, networking, promotion and publicity; creating a positive culture for
+                    business growth for existing business as well as attracting new business. The chamber serves as a
+                    welcome center, tourism information center, and local information center for current, new, and
+                    potential businesses and residents, as well as visitors to our area. We are here to serve.</p>
+                <p class="para_heading">Goals</p>
+                <p>-Network with other businesses and community<br>
+                    -Gain a voice in the local business community<br>
+                    -Increase business contacts<br>
+                    -Share information about your business with potential customers<br>
+                    -Acquire customer referrals<br>
+                    -Expand your prospect base through chamber events<br>
+                    -Add credibility to your business<br>
+                    -Increase your visibility in the community</p>
+                <div class="center_button"><button onclick="document.location='join.html'">Join the Chamber</button></div>
+            </div>
+        </section>
+        <section>
+            <h4>Gallery</h4>
+            <div class="gallery-grid">
+                <div class="slidercontainer">
+                    <div class="showSlide fade">
+                        <picture>
+                            <source media="(max-width: 645px)" srcset="images/chamberOffice640.jpg">
+                            <source media="(max-width: 1440px)" srcset="images/chamberOffice1440.jpg">
+                            <img class="gallery-img" src="images/chamberOffice1920.jpg"
+                                data-src="images/chamberOffice1920.jpg" alt="Bolivar Chamber Office" width="1920"
+                                height="850">
+                        </picture>
+                        <p>Bolivar Chamber Office</p>
+                    </div>
+                    <div class="showSlide fade">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/countHouseSouth640.jpg">
+                            <source media="(max-width: 1440px)" srcset="images/countHouseSouth1440.jpg">
+                            <img class="gallery-img" src="images/countHouseSouth1920.jpg"
+                                data-src="images/countHouseSouth1920.jpg" alt="Court House South side" width="1920"
+                                height="850">
+                        </picture>
+                        <p>Court House South Side</p>
+                    </div>
+                    <div class="showSlide fade">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/farmersMarket640.jpg">
+                            <source media="(max-width: 1440px)" srcset="images/farmersMarket1440.jpg">
+                            <img class="gallery-img" src="images/farmersMarket1920.jpg"
+                                data-src="images/farmersMarket1920.jpg" alt="Farmers Market" width="1920" height="850">
+                        </picture>
+                        <p>Farmers Market</p>
+                    </div>
+                    <div class="showSlide fade">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/highSchool640.jpg">
+                            <source media="(max-width: 1440px)" srcset="images/highSchool1440.jpg">
+                            <img class="gallery-img" src="images/highSchool1920.jpg"
+                                data-src="images/highSchool1920.jpg" alt="High Sschool" width="1920" height="850">
+                        </picture>
+                        <p>High School</p>
+                    </div>
+                    <div class="showSlide fade">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/highSchoolSign640.jpg">
+                            <source media="(max-width: 1440px)" srcset="images/highSchoolSign1440.jpg">
+                            <img class="gallery-img" src="images/highSchoolSign1920.jpg"
+                                data-src="images/highSchoolSign1920.jpg" alt="High Sschool Sign" width="1920"
+                                height="850">
+                        </picture>
+                        <p>High School Sign</p>
+                    </div>
+                    <div class="showSlide fade">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/waterTower1_640.jpg">
+                            <source media="(max-width: 1440px)" srcset="images/waterTower1_1440.jpg">
+                            <img class="gallery-img" src="images/waterTower1_1920.jpg"
+                                data-src="images/waterTower1_1920.jpg" alt="Old Water Tower" width="1920" height="850">
+                        </picture>
+                        <p>Old Water Tower</p>
+                    </div>
+                    <div class="showSlide fade">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/watherTower2_640.jpg">
+                            <source media="(max-width: 1440px)" srcset="images/watherTower2_1440.jpg">
+                            <img class="gallery-img" src="images/watherTower2_1920.jpg"
+                                data-src="images/watherTower2_1920.jpg" alt="New Water Tower" width="1920" height="850">
+                        </picture>
+                        <p>New Water Tower</p>
+                    </div>
+                    <div class="showSlide fade">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/waterTower3_640.jpg">
+                            <source media="(max-width: 1440px)" srcset="images/waterTower3_1440.jpg">
+                            <img class="gallery-img" src="images/waterTower3_1920.jpg"
+                                data-src="images/waterTower3_1920.jpg" alt="SBU Water Tower" width="1920" height="850">
+                        </picture>
+                        <p>SBU Water Tower</p>
+                    </div>
+                    <div class="showSlide fade">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/recCenter640.jpg">
+                            <source media="(max-width: 1440px)" srcset="images/recCenter1440.jpg">
+                            <img class="gallery-img" src="images/recCenter1920.jpg" data-src="images/recCenter1920.jpg"
+                                alt="Rec Center" width="1920" height="850">
+                        </picture>
+                        <p>Rec Center</p>
+                    </div>
+
+                    <a class="left" onclick="nextSlide(-1)">❮</a>
+                    <a class="right" onclick="nextSlide(1)">❯</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot_content">
+            <div class="adCards">
+                <h3>Advertisements</h3>
+                <div class="adCards_co div_scroll">
+                </div>
+            </div>
+            <div class="dirCards">
+                <h3>Directory</h3>
+                <div class="dirCards_co div_scroll">
+                </div>
+            </div>
+            <div class="econDev">
+                <h3>Economic Development</h3>
+                <p><iframe width="300" height="200" src="https://www.youtube.com/embed/CeP6MAk_4Hs"
+                        title="Bolivar Economic Development video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>117A S Main Ave, Bolivar, MO 65613</p>
+                <p>Phone:417-326-4118</p>
+
+                <p>Email: info@bolivarchamber.com</p>
+            </div>
+        </div>
+        <div class="currentDate">
+            <p>&#169; 2021 Ignite Digital Marketing | James Edward Wilson
+            </p>
+            <p>Last modified date: <span id="lastModifiedDate"></span> </p>
+        </div>
+    </footer>
+    <script src="js/bolivarcc.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+
+</html>

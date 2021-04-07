@@ -1,0 +1,28 @@
+{
+      "advertisements":[
+        {
+            "city":"Bolivar",
+            "company":"WON Communications",
+            "subject":"Internet Service Privider",
+            "cta":"Sign Up",
+            "image":"images/won.svg",
+            "website":"https://won.com"
+        },
+        {
+            "city":"Bolivar",
+            "company":"Southwest Electric Cooperative",
+            "subject":"Electric Utility Provider",
+            "cta":"Contact Us",
+            "image":"images/swec-logo-final.png",
+            "website":"https://www.swec.org/"
+        },
+        {
+            "city":"Bolivar",
+            "company":"3G’s Frozen Custard",
+            "subject":"Restaurant",
+            "cta":"Visit Us",
+            "image":"images/3gs.jpg",
+            "website":""
+        }
+    ]
+}

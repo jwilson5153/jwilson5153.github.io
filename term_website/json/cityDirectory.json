@@ -1,0 +1,60 @@
+{
+    "members":[
+        {
+            "name":"Bolivar Herald-Free Press",
+            "address":"335 S. Springfield Ave",
+            "email":"news@bolivarmonews.com ",
+            "website":"http://bolivarmonews.com/",
+            "description":"media",
+            "image":"images/bolivarfreepress_logo.jpg"
+        },
+        {
+            "name":"Citizens Memorial Healthcare",
+            "address":"1500 N. Oakland",
+            "email":"infocenter@citizensmemorial.com",
+            "website":"https://www.citizensmemorial.com/index.html",
+            "description":"Located in Bolivar, CMH serves eight counties in southwest Missouri. A 2014 and 2010 Missouri Quality Award recipient, CMH is a Level III Trauma Center and has a Level II STEMI Center. CMH also has 32 primary and specialty physician clinics, seven long-term care facilities, and other ancillary services.",
+            "image":"images/cmh-logo-grey.png"
+        },
+        {
+            "name":"Doke Propane, Inc",
+            "address":"206 N. Springfield Ave",
+            "email":"",
+            "website":"https://dokepropane.com/",
+            "description":"A Trusted Provider of Propane",
+            "image":"images/doke-logo.jpg"
+        },
+        {
+            "name":"Greater Polk Co Farmers Market",
+            "address":"330 Market Street",
+            "email":"berrypatch1@windstream.net",
+            "website":"https://www.facebook.com/profile.php?id=100057360763471",
+            "description":"Farmers Market",
+            "image":"images/polkCoFarmersMarket.jpg"
+        },
+        {
+            "name":"Meeks Building Center",
+            "address":"1912 W. Broadway",
+            "email":"",
+            "website":"https://meeks.com/midwest/",
+            "description":"Building Supplies",
+            "image":"images/meekslogo.gif"
+        },
+        {
+            "name":"Polk County Cattlemen",
+            "address":"4740 S. 85th Rd",
+            "email":"polkcocattle@gmail.com ",
+            "website":"https://www.facebook.com/Polk-County-Cattlemens-Association-228930240518775/",
+            "description":"Polk county cattlemen's is an affiliate of Missouri Cattlemen's association. Promoting beef and the beef industry",
+            "image":"images/polkCoCattle-logo.jpg"
+        },
+        {
+            "name":"Southwest Baptist University",
+            "address":"1600 University Ave",
+            "email":"admissions@sbuniv.edu",
+            "website":"https://www.sbuniv.edu/",
+            "description":"Southwest Baptist University is a private Christian college recognized for its excellence in Christian higher education, scholarships and affordability, and superior curriculum.",
+            "image":"images/sbu-logo.png"
+        }
+    ]
+}

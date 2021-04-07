@@ -1,0 +1,8 @@
+@media only screen and (min-width: 1443px) {
+  .slidercontainer {
+    max-width: 1920px;
+    position: relative;
+    margin: auto;
+  }
+
+}

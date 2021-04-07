@@ -1,0 +1,39 @@
+{
+    "events":[
+        {
+            "title":"Networking @ Noon",
+            "location":"watch social media for location",
+            "date":"May 13th",
+            "time":"Noon",
+            "purpose":"business networking"
+         },
+        {
+            "title":"Networking @ Noon",
+            "location":"watch social media for location",
+            "date":"June 10th",
+            "time":"Noon",
+            "purpose":"business networking"
+        },
+        {
+            "title":"Networking @ Noon",
+            "location":"watch social media for location",
+            "date":"July 8th",
+            "time":"Noon",
+            "purpose":"business networking"
+         },
+        {
+            "title":"Job Fair",
+            "location":"Bolivar Recreation and Aquatics Center",
+            "date":"April 25th",
+            "time":"4-6 pm",
+            "purpose":"apply for jobs, network, learn interview skills"
+        },
+        {
+            "title":"Light in the Park",
+            "location":"Bolivar Dunnigan Memorial Park",
+            "date":"November 27th - December 30th",
+            "time":"6-9 pm",
+            "purpose":"Drop off letter to Santa. Different activities each night."
+        }
+    ]
+}
